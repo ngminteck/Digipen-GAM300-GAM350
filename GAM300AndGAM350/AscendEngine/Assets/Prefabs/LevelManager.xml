@@ -1,0 +1,23 @@
+<GO TYPE="go_levelmanager">
+    <TRANSFORM>
+        <Position x="212.65817" y="28.94627" z="1920.8845"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <LOGIC>
+        <Script Name="SI_LevelManager">
+            <Persist val="false"/>
+        </Script>
+        <Script Name="SI_PauseScript">
+            <Persist val="true"/>
+        </Script>
+    </LOGIC>
+    <SOUND>
+        <Audio Track="BGM_After_2.ogg" Type="0" sound3d="false" Volume="0.5" Pitch="1" minDist="100" maxDist="1000" noDie="false"/>
+        <Audio Track="Game_Over.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="100" maxDist="1000" noDie="false"/>
+        <Audio Track="SFX_Win_01.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="100" maxDist="1000" noDie="false"/>
+		    <Audio Track="SFX_Player_collide_portal_01.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="100" maxDist="1000" noDie="false"/>
+        <Audio Track="SFX_Button_UI_click_01.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false"/>
+        <Audio Track="SFX_Button_UI_scroll_01.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false"/>
+	</SOUND>
+</GO>

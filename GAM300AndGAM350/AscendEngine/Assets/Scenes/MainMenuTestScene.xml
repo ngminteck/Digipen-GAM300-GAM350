@@ -1,0 +1,3539 @@
+<SCENE>
+    <GO NAME="Loader" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <LOGIC>
+            <Script Name="SI_MainMenuScript">
+                <Persist val="true"/>
+            </Script>
+        </LOGIC>
+        <SOUND>
+            <Audio Track="BGM_ambience_01.ogg" Type="0" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_ButtonClick.ogg" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="BGM_level_start.ogg" Type="0" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_Button_UI_scroll_01.ogg" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        </SOUND>
+    </GO>
+    <GO NAME="UI_Backing" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="24.097315" y="0" z="-12.13549"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1e-06" y="9.9999534e-07" z="9.9998999e-07" w="0.75862068"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="-0.76999998" y="0" z="0"/>
+            <ScaleOffset x="1.1799999" y="2.4400001" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0.1"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="UI_Backing" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="24.097315" y="0" z="-12.13549"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.93784177" z="0.86781609" w="1"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_dialogBG_v3_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="-0.60299999" y="-0.30500001" z="0"/>
+            <ScaleOffset x="2.5" y="2.5" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0.1"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Background" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0.04644205" y="-0.14674014" z="0.029348373"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="false"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_MainMenu_Backgroud_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="3.3800001" y="2" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Title" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-2.6196721" y="1.879685" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="1" z="1" w="1"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_MainMenu_Title_brown_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="-0.49000001" y="0.63999999" z="0"/>
+            <ScaleOffset x="1.1927" y="0.264" z="0"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="PawSelector" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="1" z="1" w="1"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_paw_selector2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="-0.88" y="0.30000001" z="0"/>
+            <ScaleOffset x="1.2" y="1.2" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="StartButton" TYPE="go_UI">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_MainMenuButtons_LightBrown_DarkBrownStroke2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_SmallQuad"/>
+            <PositionOffset x="-0.68000001" y="0.30000001" z="0"/>
+            <ScaleOffset x="1.5" y="1.5" z="1"/>
+            <UVOffset x="0.33000001" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="OptionsButton" TYPE="go_UI">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_MainMenuButtons_LightBrown_DarkBrownStroke2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_SmallQuad"/>
+            <PositionOffset x="-0.63999999" y="0.15000001" z="0"/>
+            <ScaleOffset x="1.5" y="1.5" z="1"/>
+            <UVOffset x="0" y="0.2"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="HowToPlayButton" TYPE="go_UI">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="1" z="1" w="1"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_MainMenuButtons_LightBrown_DarkBrownStroke2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_SmallQuad"/>
+            <PositionOffset x="-0.55000001" y="0" z="0"/>
+            <ScaleOffset x="2" y="2" z="1"/>
+            <UVOffset x="0" y="0.41"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="CreditsButton" TYPE="go_UI">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_MainMenuButtons_LightBrown_DarkBrownStroke2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_SmallQuad"/>
+            <PositionOffset x="-0.64499998" y="-0.15000001" z="0"/>
+            <ScaleOffset x="1.5" y="1.5" z="1"/>
+            <UVOffset x="0" y="0.61000001"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="ExitButton" TYPE="go_UI">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_MainMenuButtons_LightBrown_DarkBrownStroke2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_SmallQuad"/>
+            <PositionOffset x="-0.69" y="-0.30000001" z="0"/>
+            <ScaleOffset x="1.5" y="1.5" z="1"/>
+            <UVOffset x="0" y="0.80000001"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="HowToPlayScreen" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_HowToPlay_NOBG_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1.8" y="1.3" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="CreditScreen" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_Credits_NOBG_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="3.3800001" y="2" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="ConfirmationScreen" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_PauseConfirmation_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="3.3800001" y="2" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="YesButton" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="1" z="1" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_PauseMenuButtons_Mix_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_MainMenuButton"/>
+            <PositionOffset x="-0.17" y="-0.15000001" z="0"/>
+            <ScaleOffset x="1.5" y="1.5" z="1"/>
+            <UVOffset x="-0.11" y="-0.40000001"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="NoButton" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="1" z="1" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_PauseMenuButtons_Mix_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_MainMenuButton"/>
+            <PositionOffset x="0.14" y="-0.15000001" z="0"/>
+            <ScaleOffset x="1.5" y="1.5" z="1"/>
+            <UVOffset x="-0.11" y="-0.2"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="OptionScreen" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_Options_NOBG_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="3.3800001" y="2" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="ConfirmationSelector" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_paw_selector2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="-0.235" y="-0.15000001" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="VolumeSlider" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_SliderKnob_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0.185" y="0.1" z="0"/>
+            <ScaleOffset x="2" y="2" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="BrightnessSlider" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_SliderKnob_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0.07" y="-0.22" z="0"/>
+            <ScaleOffset x="2" y="2" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Top_Down_Light" TYPE="go_LightsOff">
+        <TRANSFORM>
+            <Position x="-300" y="1500" z="-800"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <LIGHT>
+            <IsEnable val="true"/>
+            <Color x="0.32758623" y="0.30469289" z="0.25604442" w="1"/>
+            <Type val="0"/>
+            <Intensity val="0.0049999999"/>
+            <Radius val="1"/>
+        </LIGHT>
+    </GO>
+    <GO NAME="Bottom_Up_Light" TYPE="go_LightsOff">
+        <TRANSFORM>
+            <Position x="-300" y="-1500" z="-800"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <LIGHT>
+            <IsEnable val="true"/>
+            <Color x="0.41379309" y="0.37954801" z="0.30677763" w="1"/>
+            <Type val="0"/>
+            <Intensity val="0.0049999999"/>
+            <Radius val="1"/>
+        </LIGHT>
+    </GO>
+    <GO NAME="Front_Backward_Light" TYPE="go_LightsOff">
+        <TRANSFORM>
+            <Position x="3000" y="0" z="-800"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <LIGHT>
+            <IsEnable val="true"/>
+            <Color x="0.41954023" y="0.37787551" z="0.28933808" w="1"/>
+            <Type val="0"/>
+            <Intensity val="0.0049999999"/>
+            <Radius val="1"/>
+        </LIGHT>
+    </GO>
+    <GO NAME="hintText" TYPE="go_UI" PREFAB="hintText">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <UITEXT>
+            <IsEnable val="false"/>
+            <Offset x="0" y="-2.29" z="0"/>
+            <Scale val="0.80000001"/>
+            <Color x="1" y="0.96470588" z="0.9254902" w="1"/>
+            <Highlight x="0" y="0" z="0" w="0"/>
+            <is2d val="true"/>
+            <Text name="Fuck"/>
+            <Collider x="0" y="0"/>
+        </UITEXT>
+    </GO>
+    <GO NAME="StudyCollider" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="-200"/>
+            <Scale x="3" y="1" z="2"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="false"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="400" y="102.53334" z="400"/>
+            <GeometryOffsetPosition x="0" y="-49.593483" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Ceiling" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-54.840485" y="304.33643" z="-1336.4048"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Ceiling_Plain"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="3271.1519" y="1" z="3271.1521"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="DecoTable" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-13.001279" y="56.822803" z="-220.90489"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Painting_Frame_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Table_Pedestal"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="109.9236" y="119.82484" z="109.92362"/>
+            <GeometryOffsetPosition x="0" y="0.3563652" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="briefcase9" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="234.71368" y="14.1077" z="34.480652"/>
+            <Scale x="0.99982846" y="0.99983531" z="0.99978805"/>
+            <Rotation x="-0.38496253" y="0.3854368" z="-0.59345114" w="0.59250152"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="0.98275864" y="0.98275858" z="0" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Briefcase_Leather"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="21.151243" y="58.4095" z="66.177124"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="true"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <RbEnable val="false"/>
+            <Velocity val="true"/>
+            <AngularVelocity val="true"/>
+            <GravityEnable: val="true"/>
+            <prevGrav val="true"/>
+            <Mass val="1"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Floor_1" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Floor_Wood_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Floor_Wood_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Floor_2" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-2.3841858e-07" y="0" z="-400"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="0.99823833" y="1" z="1" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Floor_Wood_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Floor_Wood_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Floor_3" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="400" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Floor_Wood_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Floor_Wood_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Floor_4" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="400" y="0" z="-400"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Floor_Wood_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Floor_Wood_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Yellow_Folder" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="78.221962" y="220.1875" z="141.43892"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Book_Files_Colors_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Folder_Yellow_Individual"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="1" y="1" z="1"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Wall_1" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="103.91837" y="150" z="210"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="1"/>
+            <Metalic0 val="0"/>
+            <Model name="Wall_Secret_Compartment"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="402.7536" y="300" z="81.516632"/>
+            <GeometryOffsetPosition x="1.2441559" y="0" z="27.788406"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="false"/>
+            <PhysicsSurfaceEnable val="false"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Wall_2" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="400" y="150" z="210"/>
+            <Scale x="0.99999237" y="1" z="0.99999237"/>
+            <Rotation x="5.5233505e-07" y="1" z="5.5233505e-07" w="3.05074e-13"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="1"/>
+            <Metalic0 val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="450" y="300" z="40"/>
+            <GeometryOffsetPosition x="1.2450867" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Wall_3" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="610" y="150" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="1"/>
+            <Metalic0 val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="450" y="300" z="40"/>
+            <GeometryOffsetPosition x="1.2450867" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="LockStudy0" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-95.537903" y="143.10152" z="57.341549"/>
+            <Scale x="2" y="3" z="2.72"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="cube"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="10" y="10" z="10"/>
+            <GeometryOffsetPosition x="2.8032651" y="15" z="2.0674679"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <PHYSICS>
+            <IsEnabled val="true"/>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall_5" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-90" y="150" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="2"/>
+            <DiffuseMap0 name="Color_Palette_Set_2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="1"/>
+            <Metalic0 val="0"/>
+            <DiffuseMap1 name="Door_Texture_albedo"/>
+            <AOMap1 name="Blank"/>
+            <GlossMap1 name="Blank"/>
+            <NormalMap1 name="Blank"/>
+            <Roughness1 val="1"/>
+            <Metalic1 val="0"/>
+            <Model name="Door_Dog"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="400.34583" y="300.3454" z="42.896332"/>
+            <GeometryOffsetPosition x="0" y="0" z="3.8146973e-06"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Bookshelf_secret" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="113.45534" y="96.781601" z="166.77748"/>
+            <Scale x="0.97949457" y="0.97953504" z="0.97984201"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="2"/>
+            <DiffuseMap0 name="Wood_Cabinet_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <DiffuseMap1 name="Book_Files_Colors_albedo"/>
+            <AOMap1 name="Blank"/>
+            <GlossMap1 name="Blank"/>
+            <NormalMap1 name="Blank"/>
+            <Roughness1 val="5"/>
+            <Metalic1 val="0"/>
+            <Model name="Bookshelf_PartialFilled_Folders"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="59.918465" y="193.97815" z="126.98267"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Cabinet_Door_3" TYPE="go_default" PARENT="true">
+        <TRANSFORM>
+            <Position x="539.12689" y="43.830803" z="-189.45721"/>
+            <Scale x="0.99999142" y="1" z="0.99999142"/>
+            <Rotation x="0" y="0.7026394" z="0" w="0.71154612"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Wood_Cabinet_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="0.80000001"/>
+            <Metalic0 val="0"/>
+            <Model name="Cabinet_Kitchen_Open_Door"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="8.0699997" y="63.087002" z="44.610001"/>
+            <GeometryOffsetPosition x="-5.6199999" y="4.414" z="21.209999"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <SOUND>
+            <Audio Track="SFX_DoorCreak.ogg" Type="0" sound3d="true" Volume="1" Pitch="0.2" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        </SOUND>
+    </GO>
+    <PARENTING NUM="1">
+        <CHILD_GO NAME="Cabinet_towel_3" TYPE="go_default" INDEX="1" PARENT="0">
+            <TRANSFORM LOCAL="true">
+                <Position x="-18.32" y="18.0583" z="0.16509999"/>
+                <Scale x="0.84000289" y="1" z="0.47000164"/>
+                <Rotation x="0" y="-0.7026394" z="0" w="0.71154612"/>
+            </TRANSFORM>
+            <GRAPHICS>
+                <IsEnable val="true"/>
+                <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+                <isInterface val="false"/>
+                <FromWorld val="false"/>
+                <UIautoScale val="true"/>
+                <MaterialSize val="1"/>
+                <DiffuseMap0 name="Warning_albedo"/>
+                <AOMap0 name="Blank"/>
+                <GlossMap0 name="Blank"/>
+                <NormalMap0 name="Blank"/>
+                <Roughness0 val="5"/>
+                <Metalic0 val="0"/>
+                <Model name="Towel_Kitchen"/>
+                <PositionOffset x="0" y="0" z="0"/>
+                <ScaleOffset x="1" y="1" z="1"/>
+                <UVOffset x="0" y="0"/>
+                <Tiled x="1" y="1"/>
+                <zRotation val="0"/>
+            </GRAPHICS>
+            <NEWPHYSICS>
+                <IsEnable val="true"/>
+                <Geometry name="BOX"/>
+                <GeomBoxGetLengths x="1" y="1" z="1"/>
+                <GeometryOffsetPosition x="0" y="0" z="0"/>
+                <HaveBody val="false"/>
+                <CollisionEnable val="true"/>
+                <PhysicsSurfaceEnable val="true"/>
+                <CCD_Enable val="false"/>
+                <CCD_ListObjects/>
+                <IgnoreList/>
+                <HaveTriggerBox val="false"/>
+                <IgnoreListRay/>
+                <IgnoreListFloorRay/>
+            </NEWPHYSICS>
+        </CHILD_GO>
+    </PARENTING>
+    <GO NAME="Ceiling_Segment_5" TYPE="go_default" PREFAB="Ceiling_Segment">
+        <TRANSFORM>
+            <Position x="-22.850998" y="291.0047" z="167.0163"/>
+            <Scale x="0.51360637" y="1" z="0.99999851"/>
+            <Rotation x="1.6671744e-07" y="0.92089623" z="1.6671744e-07" w="0.38980773"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Ceiling_Ledge_Segment"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Ceiling_Segment_1" TYPE="go_default" PREFAB="Ceiling_Segment">
+        <TRANSFORM>
+            <Position x="-79.672516" y="291.0047" z="-225.83052"/>
+            <Scale x="1.7518191" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Ceiling_Ledge_Segment"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Ceiling_Segment_2" TYPE="go_default" PREFAB="Ceiling_Segment">
+        <TRANSFORM>
+            <Position x="267.08542" y="291.0047" z="194.39078"/>
+            <Scale x="1.3074273" y="1" z="0.99998993"/>
+            <Rotation x="-3.1204419e-07" y="0.9999907" z="-4.3176686e-07" w="0.0043159835"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Ceiling_Ledge_Segment"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="redBook1" TYPE="go_default">
+        <PARTICLE>
+            <Enabled val="true"/>
+            <OffsetLocation x="0" y="0" z="0"/>
+            <MAX_SIZE val="100"/>
+            <EMIT_TYPE val="0"/>
+            <TextureName name="longflare_albedo"/>
+            <startMinCol x="1" y="0.9692111" z="0.13793105" w="1"/>
+            <endMinCol x="1" y="0.96862745" z="0.13725489" w="1"/>
+            <startMaxCol x="1" y="0.96862745" z="0.13725489" w="1"/>
+            <endMaxCol x="1" y="0.96862745" z="0.13725489" w="1"/>
+            <spawnTime val="0.2"/>
+            <spawnDelay val="0"/>
+            <startMinScale x="1" y="1" z="1"/>
+            <endMinScale x="4" y="4" z="4"/>
+            <startMaxScale x="2" y="2" z="2"/>
+            <endMaxScale x="4" y="4" z="4"/>
+            <faceDirection x="0" y="0" z="1"/>
+            <minVelocity x="4" y="2" z="4"/>
+            <maxVelocity x="-4" y="-2" z="-4"/>
+            <acceleration x="0" y="12" z="0"/>
+            <startMinSpeed val="2"/>
+            <endMinSpeed val="2"/>
+            <startMaxSpeed val="2"/>
+            <endMaxSpeed val="2"/>
+            <minLifetime val="2"/>
+            <maxLifetime val="3"/>
+            <minRotSpeed val="0"/>
+            <maxRotSpeed val="0"/>
+            <Billboard val="true"/>
+            <isLooping val="false"/>
+            <isBlending val="false"/>
+            <isDoubleSided val="false"/>
+            <countdown val="3.4028235e+38"/>
+            <selfDestruct val="false"/>
+            <isLocal val="false"/>
+        </PARTICLE>
+        <TRANSFORM>
+            <Position x="539.88599" y="12.501923" z="-10.534298"/>
+            <Scale x="0.99938518" y="0.99931777" z="0.99983335"/>
+            <Rotation x="0.68715835" y="0.68775779" z="0.1656791" w="0.1653876"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Book_Files_Colors_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Book_Red_Individual"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="12.938278" y="31.136795" z="30.818382"/>
+            <GeometryOffsetPosition x="0" y="-9.5320945e-07" z="0.79011995"/>
+            <HaveBody val="true"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <RbEnable val="true"/>
+            <Velocity val="true"/>
+            <AngularVelocity val="true"/>
+            <GravityEnable: val="true"/>
+            <prevGrav val="true"/>
+            <Mass val="1"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="true"/>
+            <TriggerGeomBoxGetLengths x="37.753418" y="17.726471" z="42.327148"/>
+            <TriggerGeometryOffsetPosition x="0" y="-7.6287988e-06" z="0"/>
+            <TriggerCollisionEnable val="true"/>
+            <IgnoreListTrigger/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="SecretBookshelf_Girder" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="157.49934" y="2.0531998" z="141.43892"/>
+            <Scale x="0.59989977" y="2.1499" z="1.7"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Locker_Steel_Bar"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="1" y="1" z="1"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Document" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="381.60648" y="110.89122" z="-39.721107"/>
+            <Scale x="0.99948972" y="0.9994632" z="0.99984813"/>
+            <Rotation x="1.8924541e-07" y="0.89097732" z="1.8924541e-07" w="0.45404783"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Paper_Documents_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Document_Page_4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Blue_Folder" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="136.6893" y="220.18745" z="141.43892"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Book_Files_Colors_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Folder_Blue_Individual"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Wall_33" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="50.170883" y="150" z="253.80927"/>
+            <Scale x="0.99999946" y="1" z="0.99999946"/>
+            <Rotation x="1.0535832e-07" y="0.92385477" z="1.0535832e-07" w="0.38274315"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="1"/>
+            <Metalic0 val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="450" y="300" z="40"/>
+            <GeometryOffsetPosition x="1.2450867" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Ceiling_Mid_1" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="256" y="293.9277" z="-9.5367432e-07"/>
+            <Scale x="1.75" y="1" z="1.86"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Ceiling_Ledge_MidPiece"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Ceiling_Segment_3" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="596.27789" y="290.9537" z="-220.77802"/>
+            <Scale x="1.7518189" y="1" z="1"/>
+            <Rotation x="0" y="-0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Ceiling_Ledge_Segment"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Document3" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="326.12787" y="110.3743" z="-11.003048"/>
+            <Scale x="0.99948853" y="0.9994632" z="0.99984813"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Paper_Documents_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Document_Page_1"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Study_Light_Ceiling2" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="249.84152" y="285.7352" z="-392.30023"/>
+            <Scale x="0.5" y="0.5" z="0.5"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Light_Ceiling"/>
+            <PositionOffset x="0" y="13.54" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <LIGHT>
+            <IsEnable val="true"/>
+            <Color x="0.99998999" y="0.99998999" z="1" w="1"/>
+            <Type val="1"/>
+            <Intensity val="2.5"/>
+            <Radius val="5"/>
+        </LIGHT>
+    </GO>
+    <GO NAME="DoorPartitionCollider_StorageR" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-90.443794" y="150" z="-150.77908"/>
+            <Scale x="0.25" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="false"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="402.74872" y="300" z="25.596668"/>
+            <GeometryOffsetPosition x="0.31127167" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Document1" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="591.8562" y="215.3156" z="-18.38739"/>
+            <Scale x="0.99948323" y="0.99948835" z="0.99972069"/>
+            <Rotation x="0.14719129" y="-0.14739902" z="0.69193357" w="0.69125682"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Paper_Documents_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Document_Page_4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Document6" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="591.8562" y="185.7244" z="-88.284126"/>
+            <Scale x="1.499976" y="1.4999995" z="1.4997393"/>
+            <Rotation x="-0.039100129" y="0.038985729" z="0.70722663" w="0.70482755"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Paper_Documents_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Document_Page_3"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Ceiling_Mid_2" TYPE="go_default" PREFAB="Ceiling_Segment">
+        <TRANSFORM>
+            <Position x="256" y="293.9277" z="-314.77625"/>
+            <Scale x="1.75" y="0.88" z="1.86"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Ceiling_Ledge_Segment"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="WallLamp_1" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="495.79172" y="223.16321" z="117.65385"/>
+            <Scale x="0.99999887" y="1" z="0.99999887"/>
+            <Rotation x="1.0535832e-07" y="-0.92385477" z="-1.0535832e-07" w="0.38274315"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="0.31034482" y="0.31034172" z="0.31034172" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Lamp_Wall"/>
+            <PositionOffset x="8" y="-7.1199999" z="8"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <IsEnabled val="true"/>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="false"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+        <LIGHT>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.65517241" z="0" w="1"/>
+            <Type val="-1"/>
+            <Intensity val="4.04"/>
+            <Radius val="3.2"/>
+        </LIGHT>
+    </GO>
+    <GO NAME="Dustbin" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="480.55579" y="28.000002" z="-4.1877441"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Wastepaper_Bin"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="56.376068" y="56.376068" z="56.376068"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Document5" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="591.8562" y="215.49588" z="-102.65855"/>
+            <Scale x="0.99947685" y="0.99948764" z="0.99968022"/>
+            <Rotation x="-0.15699558" y="0.15702328" z="0.68993348" w="0.68897599"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Paper_Documents_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Document_Page_1"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="WallLamp_2" TYPE="go_default">
+        <PARTICLE>
+            <Enabled val="true"/>
+            <OffsetLocation x="0" y="0" z="0"/>
+            <MAX_SIZE val="30"/>
+            <EMIT_TYPE val="0"/>
+            <TextureName name="Flare_albedo"/>
+            <startMinCol x="1" y="0.99999899" z="0.99998999" w="1"/>
+            <endMinCol x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <startMaxCol x="0.99999964" y="1" z="0.99998999" w="1"/>
+            <endMaxCol x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <spawnTime val="0.1"/>
+            <spawnDelay val="0"/>
+            <startMinScale x="20" y="20" z="20"/>
+            <endMinScale x="1" y="1" z="1"/>
+            <startMaxScale x="20" y="20" z="20"/>
+            <endMaxScale x="1" y="1" z="1"/>
+            <faceDirection x="0" y="0" z="1"/>
+            <minVelocity x="0" y="-10" z="-10"/>
+            <maxVelocity x="20" y="0" z="10"/>
+            <acceleration x="0" y="-9.8000002" z="0"/>
+            <startMinSpeed val="2"/>
+            <endMinSpeed val="2"/>
+            <startMaxSpeed val="2"/>
+            <endMaxSpeed val="2"/>
+            <minLifetime val="4"/>
+            <maxLifetime val="4"/>
+            <minRotSpeed val="45"/>
+            <maxRotSpeed val="45"/>
+            <Billboard val="true"/>
+            <isLooping val="true"/>
+            <isBlending val="false"/>
+            <isDoubleSided val="false"/>
+            <countdown val="3.4028235e+38"/>
+            <selfDestruct val="false"/>
+            <isLocal val="false"/>
+        </PARTICLE>
+        <TRANSFORM>
+            <Position x="-31.55603" y="238.44887" z="-232.57101"/>
+            <Scale x="0.99999774" y="1" z="0.99999774"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Lamp_Wall"/>
+            <PositionOffset x="0" y="-15.64" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <LIGHT>
+            <IsEnable val="true"/>
+            <Color x="0.43017936" y="0.40091163" z="0.68390805" w="1"/>
+            <Type val="1"/>
+            <Intensity val="2.5"/>
+            <Radius val="1.5"/>
+        </LIGHT>
+    </GO>
+    <GO NAME="SecretBookshelf_Girder" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="157.49934" y="2.0531998" z="195.87943"/>
+            <Scale x="0.59989977" y="2.1499" z="1.7"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Locker_Steel_Bar"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="1" y="1" z="1"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Right_Leftwards_Light" TYPE="go_LightsOff">
+        <TRANSFORM>
+            <Position x="0" y="0" z="3000"/>
+            <Scale x="0.5" y="0.5" z="0.5"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Alarm_Clock_Digital"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <LIGHT>
+            <IsEnable val="true"/>
+            <Color x="0.83529413" y="0.74117649" z="0.5411765" w="1"/>
+            <Type val="0"/>
+            <Intensity val="0.0099999998"/>
+            <Radius val="1"/>
+        </LIGHT>
+    </GO>
+    <GO NAME="BedroomBlinds1" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="370.33292" y="203.06729" z="186.68344"/>
+            <Scale x="0.99999666" y="1" z="0.99999666"/>
+            <Rotation x="-1.9470718e-07" y="1" z="-1.9470718e-07" w="3.7910887e-14"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Window_Frame_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Window_Blinds_Closed"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Ceiling_Mid" TYPE="go_default" PREFAB="Ceiling_Mid">
+        <TRANSFORM>
+            <Position x="256" y="293.9277" z="-9.5367432e-07"/>
+            <Scale x="1.75" y="1" z="1.86"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Ceiling_Ledge_MidPiece"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Wall_32" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="545.31805" y="150" z="162.04681"/>
+            <Scale x="0.99999988" y="1" z="0.99999988"/>
+            <Rotation x="0" y="0.38274315" z="0" w="0.92385477"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="1"/>
+            <Metalic0 val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="450" y="300" z="40"/>
+            <GeometryOffsetPosition x="1.2450867" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="FakeText" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <UITEXT>
+            <IsEnable val="false"/>
+            <Offset x="0" y="-2.5" z="0"/>
+            <Scale val="0.80000001"/>
+            <Color x="1" y="1" z="1" w="1"/>
+            <Highlight x="0" y="0" z="0" w="0"/>
+            <is2d val="true"/>
+            <Text name="Fuck"/>
+            <Collider x="0" y="0"/>
+        </UITEXT>
+    </GO>
+    <GO NAME="Blue_Folder" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="47.288559" y="210.48717" z="141.43892"/>
+            <Scale x="0.99996966" y="0.99996346" z="0.99987131"/>
+            <Rotation x="0.70674813" y="0.70746523" z="2.2208501e-07" w="2.2185986e-07"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Book_Files_Colors_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Book_Red_Individual"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="1" y="1" z="1"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Cabinet3" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="565.35834" y="46.930031" z="-163.12408"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Wood_Cabinet_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="1"/>
+            <Metalic0 val="0"/>
+            <Model name="Cabinet_Kitchen_Open_Body"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="55.604965" y="90.127602" z="43.270676"/>
+            <GeometryOffsetPosition x="3.7584" y="-2.7170999" z="7.6293945e-06"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Shelf" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="107.25797" y="199.21309" z="156.28925"/>
+            <Scale x="0.99999958" y="1" z="0.99999958"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Wood_Cabinet_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Shelf_Ledge"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <IsEnabled val="true"/>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="false"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Blue_Folder" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="160.54321" y="210.48717" z="141.43892"/>
+            <Scale x="0.99997926" y="0.99997306" z="0.99991053"/>
+            <Rotation x="0.70686275" y="0.70735073" z="2.2204893e-07" w="2.2189599e-07"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Book_Files_Colors_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Book_Yellow_Individual"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="1" y="1" z="1"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Document7" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="591.8562" y="185.7244" z="-7.2962494"/>
+            <Scale x="0.99948609" y="0.99948376" z="0.99963212"/>
+            <Rotation x="-0.039036546" y="0.038984384" z="0.70666689" w="0.7053923"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Paper_Documents_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Document_Page_4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Right_Leftwards_Light" TYPE="go_LightsOff">
+        <TRANSFORM>
+            <Position x="0" y="0" z="3000"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <LIGHT>
+            <IsEnable val="true"/>
+            <Color x="0.545977" y="0.46564928" z="0.29495311" w="1"/>
+            <Type val="-1"/>
+            <Intensity val="0.0049999999"/>
+            <Radius val="1"/>
+        </LIGHT>
+    </GO>
+    <GO NAME="Ceiling_Segment_4" TYPE="go_default" PREFAB="Ceiling_Segment">
+        <TRANSFORM>
+            <Position x="561.83173" y="291.0047" z="175.28046"/>
+            <Scale x="0.54404926" y="1" z="0.99999803"/>
+            <Rotation x="-2.2226595e-07" y="-0.93233001" z="6.8016455e-08" w="0.36160859"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Ceiling_Ledge_Segment"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Switch_3" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-68.469406" y="156.59856" z="-230.39461"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="-0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Switch_Wall"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="21.081001" y="21.081013" z="11.868635"/>
+            <GeometryOffsetPosition x="0" y="9.5367432e-06" z="1.4305115e-06"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="true"/>
+            <TriggerGeomBoxGetLengths x="21.081001" y="21.081013" z="11.868635"/>
+            <TriggerGeometryOffsetPosition x="0" y="9.5367432e-06" z="1.4305115e-06"/>
+            <TriggerCollisionEnable val="true"/>
+            <IgnoreListTrigger/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Red_Folder" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="119.9772" y="222.25879" z="141.43892"/>
+            <Scale x="0.99991703" y="0.999951" z="0.99994177"/>
+            <Rotation x="0.70694923" y="-0.7072643" z="-4.0118158e-07" w="3.7993345e-07"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Book_Files_Colors_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Folder_Pink_Individual"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="1" y="1" z="1"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="briefcase3" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="79.970795" y="100.85453" z="237.88019"/>
+            <Scale x="0.90000355" y="0.99999762" z="0.99999976"/>
+            <Rotation x="0.047134947" y="0.28940386" z="0.15368964" w="0.94361168"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Briefcase_Metal"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <IsEnabled val="true"/>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Purple_Folder" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="106.22002" y="222.42265" z="141.43892"/>
+            <Scale x="0.99999827" y="1" z="0.99998164"/>
+            <Rotation x="-0.70706463" y="0.70714897" z="-1.3768692e-07" w="1.3767063e-07"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Book_Files_Colors_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Folder_Turquoise_Individual"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="1" y="1" z="1"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Document_Page3" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="539.1106" y="1.029011" z="-80.741409"/>
+            <Scale x="0.99999779" y="1" z="0.99999779"/>
+            <Rotation x="2.3308374e-07" y="-0.94513184" z="-8.1470866e-08" w="0.32668912"/>
+        </TRANSFORM>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="26.788473" y="1" z="20.585117"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="true"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <RbEnable val="false"/>
+            <Velocity val="true"/>
+            <AngularVelocity val="true"/>
+            <GravityEnable: val="true"/>
+            <prevGrav val="true"/>
+            <Mass val="1"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Paper_Documents_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Document_Page_2"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="DoorColiderStudy0" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-87.449478" y="62.83131" z="-1.6667223"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="35.582745" y="40.664124" z="3.4052315"/>
+            <GeometryOffsetPosition x="0.079591751" y="0.25968933" z="1.9073486e-06"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Door_Texture_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Door_Dog_Flap"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND>
+            <Audio Track="SFX_DoorTrans.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_ChineseUnlock.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        </SOUND>
+    </GO>
+    <GO NAME="Study_Lamp" TYPE="go_LightsOff">
+        <TRANSFORM>
+            <Position x="269.16162" y="160.65385" z="-36.150108"/>
+            <Scale x="0.99999934" y="1" z="0.99999934"/>
+            <Rotation x="0" y="0.4210526" z="0" w="0.90703619"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Lamp_Study"/>
+            <PositionOffset x="0" y="-28.190001" z="-15.06"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <LIGHT>
+            <IsEnable val="true"/>
+            <Color x="0.99425286" y="0.92503119" z="0" w="1"/>
+            <Type val="1"/>
+            <Intensity val="2.23"/>
+            <Radius val="0.40000001"/>
+        </LIGHT>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="62.423748" y="69.581512" z="33.310467"/>
+            <GeometryOffsetPosition x="1.9073474e-06" y="12.223938" z="5.6172457"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Green_Folder" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="93.15815" y="222.76167" z="141.43892"/>
+            <Scale x="0.99999088" y="0.99999326" z="0.99994332"/>
+            <Rotation x="0.70696133" y="-0.7072522" z="-3.8537229e-07" w="3.9574962e-07"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Book_Files_Colors_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Folder_Green_Individual"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="1" y="1" z="1"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Document_Page2" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-19.945602" y="1.7706115" z="2.887455"/>
+            <Scale x="1.2" y="1.2" z="1.2"/>
+            <Rotation x="-7.8449261e-07" y="-0.38774249" z="-2.861174e-07" w="0.92176771"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Paper_Documents_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Document_Page_1"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Study_Light_Ceiling1" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="249.84152" y="285.7352" z="-131.27434"/>
+            <Scale x="0.5" y="0.5" z="0.5"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Light_Ceiling"/>
+            <PositionOffset x="0" y="13.54" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <LIGHT>
+            <IsEnable val="true"/>
+            <Color x="0.99998999" y="0.99998999" z="1" w="1"/>
+            <Type val="1"/>
+            <Intensity val="2.5"/>
+            <Radius val="5"/>
+        </LIGHT>
+    </GO>
+    <GO NAME="Study_Chair" TYPE="go_default" PARENT="true">
+        <TRANSFORM>
+            <Position x="310.85599" y="53.516834" z="71.853622"/>
+            <Scale x="0.99999297" y="1" z="0.99999297"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="1"/>
+            <Metalic0 val="0"/>
+            <Model name="Chair_Study"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <PARENTING NUM="2">
+        <CHILD_GO NAME="Study_Chair_Collider" TYPE="go_default" INDEX="1" PARENT="0">
+            <TRANSFORM LOCAL="true">
+                <Position x="27.27836" y="4.1203651" z="-4.3321075"/>
+                <Scale x="0.92897785" y="5.6237993" z="6.4938459"/>
+                <Rotation x="0" y="0" z="0" w="1"/>
+            </TRANSFORM>
+            <GRAPHICS>
+                <IsEnable val="false"/>
+                <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+                <isInterface val="false"/>
+                <FromWorld val="false"/>
+                <UIautoScale val="true"/>
+                <MaterialSize val="1"/>
+                <DiffuseMap0 name="Blank"/>
+                <AOMap0 name="Blank"/>
+                <GlossMap0 name="Blank"/>
+                <NormalMap0 name="Blank"/>
+                <Roughness0 val="5"/>
+                <Metalic0 val="0"/>
+                <Model name="cube"/>
+                <PositionOffset x="0" y="0" z="0"/>
+                <ScaleOffset x="1" y="1" z="1"/>
+                <UVOffset x="0" y="0"/>
+                <Tiled x="1" y="1"/>
+                <zRotation val="0"/>
+            </GRAPHICS>
+            <PHYSICS>
+                <IsEnabled val="true"/>
+                <Force x="0" y="0" z="0"/>
+                <Mass val="8"/>
+                <InverseMass val="0.125"/>
+                <StaticFriction val="0.40000001"/>
+                <DynamicFriction val="0.2"/>
+                <Restitution val="1"/>
+                <LinearDamping val="0.0049999999"/>
+                <Static val="false"/>
+                <Trigger val="false"/>
+                <UseGravity val="true"/>
+                <AllowRayCast val="true"/>
+                <ColliderType val="0"/>
+                <Radius val="0.5"/>
+                <ForceMultiplier val="1"/>
+                <ColliderOffset x="0" y="0" z="0"/>
+                <CollisionFilterList>
+                    <TRIGGER>IGNORE</TRIGGER>
+                    <STATIC>IGNORE</STATIC>
+                    <DYNAMIC>IGNORE</DYNAMIC>
+                    <PLAYER>IGNORE</PLAYER>
+                    <OTHER>IGNORE</OTHER>
+                </CollisionFilterList>
+            </PHYSICS>
+            <NEWPHYSICS>
+                <IsEnable val="true"/>
+                <Geometry name="BOX"/>
+                <GeomBoxGetLengths x="10" y="10" z="10"/>
+                <GeometryOffsetPosition x="1.3020763" y="28.118996" z="4.9359274"/>
+                <HaveBody val="false"/>
+                <CollisionEnable val="true"/>
+                <PhysicsSurfaceEnable val="true"/>
+                <CCD_Enable val="false"/>
+                <CCD_ListObjects/>
+                <IgnoreList/>
+                <HaveTriggerBox val="false"/>
+                <IgnoreListRay/>
+                <IgnoreListFloorRay/>
+            </NEWPHYSICS>
+        </CHILD_GO>
+        <CHILD_GO NAME="Study_Chair_Collider" TYPE="go_default" INDEX="2" PARENT="0">
+            <TRANSFORM LOCAL="true">
+                <Position x="-9.4733944" y="-51.186012" z="-4.3321075"/>
+                <Scale x="6.9138484" y="5.6237993" z="6.4938459"/>
+                <Rotation x="0" y="0" z="0" w="1"/>
+            </TRANSFORM>
+            <GRAPHICS>
+                <IsEnable val="false"/>
+                <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+                <isInterface val="false"/>
+                <FromWorld val="false"/>
+                <UIautoScale val="true"/>
+                <MaterialSize val="1"/>
+                <DiffuseMap0 name="Blank"/>
+                <AOMap0 name="Blank"/>
+                <GlossMap0 name="Blank"/>
+                <NormalMap0 name="Blank"/>
+                <Roughness0 val="5"/>
+                <Metalic0 val="0"/>
+                <Model name="cube"/>
+                <PositionOffset x="0" y="0" z="0"/>
+                <ScaleOffset x="1" y="1" z="1"/>
+                <UVOffset x="0" y="0"/>
+                <Tiled x="1" y="1"/>
+                <zRotation val="0"/>
+            </GRAPHICS>
+            <NEWPHYSICS>
+                <IsEnable val="true"/>
+                <Geometry name="BOX"/>
+                <GeomBoxGetLengths x="10" y="10" z="10"/>
+                <GeometryOffsetPosition x="9.6906071" y="28.118996" z="4.9359274"/>
+                <HaveBody val="false"/>
+                <CollisionEnable val="true"/>
+                <PhysicsSurfaceEnable val="true"/>
+                <CCD_Enable val="false"/>
+                <CCD_ListObjects/>
+                <IgnoreList/>
+                <HaveTriggerBox val="false"/>
+                <IgnoreListRay/>
+                <IgnoreListFloorRay/>
+            </NEWPHYSICS>
+            <PHYSICS>
+                <IsEnabled val="true"/>
+                <Force x="0" y="0" z="0"/>
+                <Mass val="8"/>
+                <InverseMass val="0.125"/>
+                <StaticFriction val="0.40000001"/>
+                <DynamicFriction val="0.2"/>
+                <Restitution val="1"/>
+                <LinearDamping val="0.0049999999"/>
+                <Static val="false"/>
+                <Trigger val="false"/>
+                <UseGravity val="true"/>
+                <AllowRayCast val="true"/>
+                <ColliderType val="0"/>
+                <Radius val="0.5"/>
+                <ForceMultiplier val="1"/>
+                <ColliderOffset x="0" y="0" z="0"/>
+                <CollisionFilterList>
+                    <TRIGGER>IGNORE</TRIGGER>
+                    <STATIC>IGNORE</STATIC>
+                    <DYNAMIC>IGNORE</DYNAMIC>
+                    <PLAYER>IGNORE</PLAYER>
+                    <OTHER>IGNORE</OTHER>
+                </CollisionFilterList>
+            </PHYSICS>
+        </CHILD_GO>
+    </PARENTING>
+    <GO NAME="Study_Table" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="341.9928" y="57.129547" z="-26.156555"/>
+            <Scale x="0.9999972" y="1" z="0.9999972"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Wood_Cabinet_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="0.60000002"/>
+            <Metalic0 val="0"/>
+            <Model name="Desk_Study"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="220.25974" y="105.73517" z="95.905029"/>
+            <GeometryOffsetPosition x="-1.5258746e-05" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Whiteboard_1" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="596.03809" y="214.82768" z="-52.130157"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="-0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Whiteboard"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <IsEnabled val="true"/>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="false"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="StudyPuppy" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="333.79587" y="125.37344" z="-32.268326"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+    </GO>
+    <GO NAME="Document4" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="357.60495" y="111.90302" z="-11.003048"/>
+            <Scale x="0.99948853" y="0.9994632" z="0.99984813"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Paper_Documents_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Document_Page_1"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Bookshelf" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="580" y="108" z="-211.93028"/>
+            <Scale x="0.99999839" y="1" z="0.99999839"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Wood_Cabinet_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="0.89999998"/>
+            <Metalic0 val="0"/>
+            <Model name="Bookshelf_Empty"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="115.4817" y="210.75897" z="42.334991"/>
+            <GeometryOffsetPosition x="-0.00019073456" y="-2.0945129" z="-6.959538"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Document_Page4" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="541.55524" y="1.0316807" z="84.023308"/>
+            <Scale x="0.99999654" y="1" z="0.99999654"/>
+            <Rotation x="-5.0448568e-07" y="-0.95875728" z="4.2407532e-07" w="-0.284226"/>
+        </TRANSFORM>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="26.788473" y="1" z="20.585117"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="true"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <RbEnable val="false"/>
+            <Velocity val="true"/>
+            <AngularVelocity val="true"/>
+            <GravityEnable: val="true"/>
+            <prevGrav val="true"/>
+            <Mass val="1"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Paper_Documents_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Document_Page_4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Document2" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="329.22568" y="110.54665" z="-43.244263"/>
+            <Scale x="0.99948835" y="0.9994632" z="0.99984825"/>
+            <Rotation x="0" y="0.5671615" z="0" w="0.82360655"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Paper_Documents_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Document_Page_2"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Document_Page5" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="562.01819" y="89.667931" z="-161.05261"/>
+            <Scale x="0.99999726" y="1" z="0.99999726"/>
+            <Rotation x="9.3130645e-08" y="-0.53226388" z="7.729966e-08" w="0.84657848"/>
+        </TRANSFORM>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="26.788473" y="1" z="20.585117"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="true"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <RbEnable val="false"/>
+            <Velocity val="true"/>
+            <AngularVelocity val="true"/>
+            <GravityEnable: val="true"/>
+            <prevGrav val="true"/>
+            <Mass val="1"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Paper_Documents_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Document_Page_3"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="briefcase1" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="144.55196" y="104.24986" z="233.31706"/>
+            <Scale x="0.90000236" y="0.99999869" z="1"/>
+            <Rotation x="0" y="-0" z="-0.10825608" w="0.99412304"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Briefcase_Leather"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <IsEnabled val="true"/>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="dialogDogname" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_dialogName_Charlie_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="-0.57999998" y="-0.70999998" z="0"/>
+            <ScaleOffset x="1.5" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="dialogBg" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-2.1029577" y="0.05725795" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_dialogBG_Final_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0" y="-0.41" z="0"/>
+            <ScaleOffset x="3" y="1.2" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="dialogDog" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_dialogFace_Charlie_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="-0.73000002" y="-0.81" z="0"/>
+            <ScaleOffset x="1.3" y="1.3" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="movingDoggo" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="200" y="46" z="-120"/>
+            <Scale x="0.99995947" y="0.99998659" z="0.99995595"/>
+            <Rotation x="-0.091959141" y="-0.4149684" z="-0.062523946" w="0.9030146"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="RedPanda_Happy0_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="big_wagging1"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <ANIMATION>
+            <NameTexture name="RedPanda_Happy"/>
+            <isPlaying val="true"/>
+            <isLoop val="false"/>
+            <maxTime0 val="0"/>
+            <maxTime1 val="0"/>
+            <maxTime2 val="0.22"/>
+            <NumberOfTex val="1"/>
+            <Type val="2"/>
+            <NameModel name="big_wagging"/>
+            <NumberOfModel val="4"/>
+        </ANIMATION>
+    </GO>
+</SCENE>

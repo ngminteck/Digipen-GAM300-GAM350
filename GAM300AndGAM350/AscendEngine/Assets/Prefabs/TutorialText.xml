@@ -1,0 +1,16 @@
+<GO TYPE="go_default">
+    <TRANSFORM>
+        <Position x="-2.968154" y="1.6890001" z="0"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <UITEXT>
+        <Offset x="0" y="0" z="0"/>
+        <Scale val="1"/>
+        <Color x="1" y="0.58039218" z="0" w="1"/>
+        <Highlight x="0" y="0" z="0" w="0"/>
+        <is2d val="true"/>
+        <Text name="kjadlksjlksajdlksajdlkjsalkdj"/>
+        <Collider x="0" y="0"/>
+    </UITEXT>
+</GO>

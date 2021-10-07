@@ -1,0 +1,50 @@
+<GO TYPE="go_default">
+    <TRANSFORM>
+        <Position x="-1173.8412" y="124.39545" z="0"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <GRAPHICS>
+        <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+        <isInterface val="false"/>
+        <FromWorld val="false"/>
+        <UIautoScale val="true"/>
+        <DiffuseMap name="Color_Palette_Set_1_albedo"/>
+        <AOMap name="Blank"/>
+        <GlossMap name="Blank"/>
+        <NormalMap name="Blank"/>
+        <Roughness val="5"/>
+        <Metalic val="0"/>
+        <Model name="Plate"/>
+        <PositionOffset x="0" y="0" z="0"/>
+        <ScaleOffset x="1" y="1" z="1"/>
+        <UVOffset x="0" y="0"/>
+        <Tiled x="1" y="1"/>
+        <zRotation val="0"/>
+    </GRAPHICS>
+    <PHYSICS>
+        <Force x="0" y="0" z="0"/>
+        <Mass val="8"/>
+        <InverseMass val="0.125"/>
+        <StaticFriction val="0.40000001"/>
+        <DynamicFriction val="0.2"/>
+        <Restitution val="1"/>
+        <LinearDamping val="0.0049999999"/>
+        <Static val="false"/>
+        <Trigger val="false"/>
+        <UseGravity val="true"/>
+        <AllowRayCast val="true"/>
+        <ColliderType val="1"/>
+        <Min x="-0.5" y="-0.5" z="-0.5"/>
+        <Max x="0.5" y="0.5" z="0.5"/>
+        <ForceMultiplier val="1"/>
+        <ColliderOffset x="0" y="0" z="0"/>
+        <CollisionFilterList>
+            <TRIGGER>IGNORE</TRIGGER>
+            <STATIC>IGNORE</STATIC>
+            <DYNAMIC>IGNORE</DYNAMIC>
+            <PLAYER>IGNORE</PLAYER>
+            <OTHER>IGNORE</OTHER>
+        </CollisionFilterList>
+    </PHYSICS>
+</GO>

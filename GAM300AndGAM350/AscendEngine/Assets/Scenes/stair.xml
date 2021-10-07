@@ -1,0 +1,173 @@
+<SCENE>
+   <GO NAME="WoodStairs_bottom" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-945" y="-81.182709" z="-1453.884"/>
+            <Scale x="3" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="2"/>
+            <DiffuseMap0 name="Wood_Cabinet_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <DiffuseMap1 name="Floor_Wood_albedo"/>
+            <AOMap1 name="Blank"/>
+            <GlossMap1 name="Blank"/>
+            <NormalMap1 name="Blank"/>
+            <Roughness1 val="5"/>
+            <Metalic1 val="0"/>
+            <Model name="Steps_Wood_1x1"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="100.80407" y="25" z="100"/>
+            <GeometryOffsetPosition x="0" y="8" z="-10"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+     <GO NAME="WoodStairs_Middle" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-945" y="-47.42083" z="-1400"/>
+            <Scale x="3" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="2"/>
+            <DiffuseMap0 name="Wood_Cabinet_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <DiffuseMap1 name="Floor_Wood_albedo"/>
+            <AOMap1 name="Blank"/>
+            <GlossMap1 name="Blank"/>
+            <NormalMap1 name="Blank"/>
+            <Roughness1 val="5"/>
+            <Metalic1 val="0"/>
+            <Model name="Steps_Wood_1x1"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="100.80407" y="25" z="58"/>
+            <GeometryOffsetPosition x="0" y="8" z="-35"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+     <GO NAME="WoodStairs_Top" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-945" y="-14.137753" z="-1339.8885"/>
+            <Scale x="3" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="2"/>
+            <DiffuseMap0 name="Wood_Cabinet_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <DiffuseMap1 name="Floor_Wood_albedo"/>
+            <AOMap1 name="Blank"/>
+            <GlossMap1 name="Blank"/>
+            <NormalMap1 name="Blank"/>
+            <Roughness1 val="5"/>
+            <Metalic1 val="0"/>
+            <Model name="Steps_Wood_1x1"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+     <GO NAME="floorhack1" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-305.17108" y="0" z="600"/>
+            <Scale x="10" y="1" z="10"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="false"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Floor_Wood_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="400" y="99.263687" z="400"/>
+            <GeometryOffsetPosition x="0" y="-48.807945" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+</SCENE>

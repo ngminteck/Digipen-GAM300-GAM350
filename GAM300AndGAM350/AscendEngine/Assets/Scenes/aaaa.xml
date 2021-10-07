@@ -1,0 +1,1582 @@
+<SCENE>
+    <GO NAME="itemObject" TYPE="go_doorInteract">
+        <TRANSFORM>
+            <Position x="-43.357441" y="-36.990601" z="-17.399237"/>
+            <Scale x="0.2" y="0.2" z="0.2"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="cube"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <LOGIC>
+            <Script Name="SI_ItemInteract">
+                <Range val="0"/>
+                <Filename name=""/>
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+        <PHYSICS>
+            <IsEnabled val="true"/>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="false"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-2" y="-2" z="-2"/>
+            <Max x="2" y="2" z="2"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="10" y="10" z="10"/>
+            <GeometryOffsetPosition x="0.28032652" y="1" z="0.15201969"/>
+            <HaveBody val="true"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <ContactMode>
+                <dContactApprox0 val="false"/>
+                <dContactApprox1 val="false"/>
+                <dContactApprox1_1 val="false"/>
+                <dContactApprox1_2 val="false"/>
+                <dContactApprox1_N val="false"/>
+                <dContactAxisDep val="false"/>
+                <dContactBounce val="false"/>
+                <dContactFDir1 val="false"/>
+                <dContactMotion1 val="false"/>
+                <dContactMotion2 val="false"/>
+                <dContactMotionN val="false"/>
+                <dContactMu2 val="false"/>
+                <dContactRolling val="false"/>
+                <dContactSlip1 val="false"/>
+                <dContactSlip2 val="false"/>
+                <dContactSoftCFM val="false"/>
+                <dContactSoftERP val="false"/>
+            </ContactMode>
+            <Friction1 val="0"/>
+            <Friction2 val="0"/>
+            <Densities1 val="0"/>
+            <Densities2 val="0"/>
+            <DensitiesN val="0"/>
+            <Bounce val="0"/>
+            <BounceVel val="0"/>
+            <ErrorReductionParameter val="0"/>
+            <ConstraintForce val="0"/>
+            <Motion1 val="0"/>
+            <Motion2 val="0"/>
+            <ForceDependentSlip1 val="0"/>
+            <ForceDependentSlip2 val="0"/>
+            <RbEnable val="true"/>
+            <Velocity val="true"/>
+            <AngularVelocity val="true"/>
+            <GravityEnable: val="true"/>
+            <Mass val="1"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="true"/>
+            <TriggerGeomBoxGetLengths x="100" y="100" z="100"/>
+            <TriggerGeometryOffsetPosition x="0.28032652" y="1" z="0.15201969"/>
+            <TriggerCollisionEnable val="true"/>
+            <IgnoreListTrigger/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Sky Light" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-74.861694" y="27.012432" z="21.07542"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <LIGHT>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0.5"/>
+            <Type val="0"/>
+            <Intensity val="0.43000001"/>
+            <Radius val="1"/>
+        </LIGHT>
+    </GO>
+    <GO NAME="pickupInteract" TYPE="go_doorInteract">
+        <TRANSFORM>
+            <Position x="-43.505203" y="-36.630699" z="-37.908195"/>
+            <Scale x="0.2" y="0.2" z="0.2"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="cube"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <LOGIC>
+            <Script Name="SI_PickupInteract">
+                <Filename name=""/>
+                <Range val="40"/>
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="10" y="10" z="10"/>
+            <GeometryOffsetPosition x="0.28032652" y="1" z="0.15201969"/>
+            <HaveBody val="true"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <ContactMode>
+                <dContactApprox0 val="false"/>
+                <dContactApprox1 val="false"/>
+                <dContactApprox1_1 val="false"/>
+                <dContactApprox1_2 val="false"/>
+                <dContactApprox1_N val="false"/>
+                <dContactAxisDep val="false"/>
+                <dContactBounce val="false"/>
+                <dContactFDir1 val="false"/>
+                <dContactMotion1 val="false"/>
+                <dContactMotion2 val="false"/>
+                <dContactMotionN val="false"/>
+                <dContactMu2 val="false"/>
+                <dContactRolling val="false"/>
+                <dContactSlip1 val="false"/>
+                <dContactSlip2 val="false"/>
+                <dContactSoftCFM val="false"/>
+                <dContactSoftERP val="false"/>
+            </ContactMode>
+            <Friction1 val="0"/>
+            <Friction2 val="0"/>
+            <Densities1 val="0"/>
+            <Densities2 val="0"/>
+            <DensitiesN val="0"/>
+            <Bounce val="0"/>
+            <BounceVel val="0"/>
+            <ErrorReductionParameter val="0"/>
+            <ConstraintForce val="0"/>
+            <Motion1 val="0"/>
+            <Motion2 val="0"/>
+            <ForceDependentSlip1 val="0"/>
+            <ForceDependentSlip2 val="0"/>
+            <RbEnable val="true"/>
+            <Velocity val="true"/>
+            <AngularVelocity val="true"/>
+            <GravityEnable: val="true"/>
+            <Mass val="1"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="true"/>
+            <TriggerGeomBoxGetLengths x="20" y="20" z="20"/>
+            <TriggerGeometryOffsetPosition x="0.28032652" y="1" z="0.15201969"/>
+            <TriggerCollisionEnable val="true"/>
+            <IgnoreListTrigger/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="Puppy" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-34.448895" y="-220.04971" z="123.21085"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Alarm_Clock_Digital"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="1" y="1" z="1"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <ContactMode>
+                <dContactApprox0 val="false"/>
+                <dContactApprox1 val="false"/>
+                <dContactApprox1_1 val="false"/>
+                <dContactApprox1_2 val="false"/>
+                <dContactApprox1_N val="false"/>
+                <dContactAxisDep val="false"/>
+                <dContactBounce val="false"/>
+                <dContactFDir1 val="false"/>
+                <dContactMotion1 val="false"/>
+                <dContactMotion2 val="false"/>
+                <dContactMotionN val="false"/>
+                <dContactMu2 val="false"/>
+                <dContactRolling val="false"/>
+                <dContactSlip1 val="false"/>
+                <dContactSlip2 val="false"/>
+                <dContactSoftCFM val="false"/>
+                <dContactSoftERP val="false"/>
+            </ContactMode>
+            <Friction1 val="0"/>
+            <Friction2 val="0"/>
+            <Densities1 val="0"/>
+            <Densities2 val="0"/>
+            <DensitiesN val="0"/>
+            <Bounce val="0"/>
+            <BounceVel val="0"/>
+            <ErrorReductionParameter val="0"/>
+            <ConstraintForce val="0"/>
+            <Motion1 val="0"/>
+            <Motion2 val="0"/>
+            <ForceDependentSlip1 val="0"/>
+            <ForceDependentSlip2 val="0"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <LOGIC>
+            <Script Name="SI_PuppyInteract">
+                <Filename name=""/>
+                <dialogFile name="PuppyBedRoom"/>
+                <Activated val="true"/>
+                <Range val="90"/>
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+    </GO>
+    <GO NAME="DefaultObject 6" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-2.3841858e-07" y="-244.03769" z="3.5443878"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Floor_Wood_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="400" y="102.3737" z="400"/>
+            <GeometryOffsetPosition x="0" y="-48.807945" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <ContactMode>
+                <dContactApprox0 val="false"/>
+                <dContactApprox1 val="false"/>
+                <dContactApprox1_1 val="false"/>
+                <dContactApprox1_2 val="false"/>
+                <dContactApprox1_N val="false"/>
+                <dContactAxisDep val="false"/>
+                <dContactBounce val="false"/>
+                <dContactFDir1 val="false"/>
+                <dContactMotion1 val="false"/>
+                <dContactMotion2 val="false"/>
+                <dContactMotionN val="false"/>
+                <dContactMu2 val="false"/>
+                <dContactRolling val="false"/>
+                <dContactSlip1 val="false"/>
+                <dContactSlip2 val="false"/>
+                <dContactSoftCFM val="false"/>
+                <dContactSoftERP val="false"/>
+            </ContactMode>
+            <Friction1 val="0"/>
+            <Friction2 val="0"/>
+            <Densities1 val="0"/>
+            <Densities2 val="0"/>
+            <DensitiesN val="0"/>
+            <Bounce val="0"/>
+            <BounceVel val="0"/>
+            <ErrorReductionParameter val="0"/>
+            <ConstraintForce val="0"/>
+            <Motion1 val="0"/>
+            <Motion2 val="0"/>
+            <ForceDependentSlip1 val="0"/>
+            <ForceDependentSlip2 val="0"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <PHYSICS>
+            <IsEnabled val="true"/>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0"/>
+            <DynamicFriction val="0"/>
+            <Restitution val="0"/>
+            <LinearDamping val="0"/>
+            <Static val="true"/>
+            <Trigger val="false"/>
+            <UseGravity val="false"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-200" y="-3" z="-200"/>
+            <Max x="200" y="3" z="200"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="object" TYPE="go_doorInteract">
+        <TRANSFORM>
+            <Position x="-43.357441" y="-212.30891" z="8.2568741"/>
+            <Scale x="0.2" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="cube"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <LOGIC>
+            <Script Name="SI_DoorInteract">
+                <Filename name="DoorInteract"/>
+                <Pos1 name="pos1"/>
+                <Pos2 name="pos2"/>
+                <Range val="100"/>
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="10" y="10" z="10"/>
+            <GeometryOffsetPosition x="0.28032652" y="5" z="0.76009846"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <ContactMode>
+                <dContactApprox0 val="false"/>
+                <dContactApprox1 val="false"/>
+                <dContactApprox1_1 val="false"/>
+                <dContactApprox1_2 val="false"/>
+                <dContactApprox1_N val="false"/>
+                <dContactAxisDep val="false"/>
+                <dContactBounce val="false"/>
+                <dContactFDir1 val="false"/>
+                <dContactMotion1 val="false"/>
+                <dContactMotion2 val="false"/>
+                <dContactMotionN val="false"/>
+                <dContactMu2 val="false"/>
+                <dContactRolling val="false"/>
+                <dContactSlip1 val="false"/>
+                <dContactSlip2 val="false"/>
+                <dContactSoftCFM val="false"/>
+                <dContactSoftERP val="false"/>
+            </ContactMode>
+            <Friction1 val="0"/>
+            <Friction2 val="0"/>
+            <Densities1 val="0"/>
+            <Densities2 val="0"/>
+            <DensitiesN val="0"/>
+            <Bounce val="0"/>
+            <BounceVel val="0"/>
+            <ErrorReductionParameter val="0"/>
+            <ConstraintForce val="0"/>
+            <Motion1 val="0"/>
+            <Motion2 val="0"/>
+            <ForceDependentSlip1 val="0"/>
+            <ForceDependentSlip2 val="0"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="DefaultObject 7" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="57.837433" y="-195.36046" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Alarm_Clock_Digital"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <IsEnabled val="true"/>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="false"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-15" y="-1" z="-15"/>
+            <Max x="15" y="1" z="15"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="TriggerBox" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-149.57346" y="-193.54558" z="138.8342"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Alarm_Clock_Digital"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="SPHERE"/>
+            <rad val="17.979080200195313"/>
+            <GeometryOffsetPosition x="2.2888184e-05" y="0.3718605" z="0.00010681152"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <ContactMode>
+                <dContactApprox0 val="false"/>
+                <dContactApprox1 val="false"/>
+                <dContactApprox1_1 val="false"/>
+                <dContactApprox1_2 val="false"/>
+                <dContactApprox1_N val="false"/>
+                <dContactAxisDep val="false"/>
+                <dContactBounce val="false"/>
+                <dContactFDir1 val="false"/>
+                <dContactMotion1 val="false"/>
+                <dContactMotion2 val="false"/>
+                <dContactMotionN val="false"/>
+                <dContactMu2 val="false"/>
+                <dContactRolling val="false"/>
+                <dContactSlip1 val="false"/>
+                <dContactSlip2 val="false"/>
+                <dContactSoftCFM val="false"/>
+                <dContactSoftERP val="false"/>
+            </ContactMode>
+            <Friction1 val="0"/>
+            <Friction2 val="0"/>
+            <Densities1 val="0"/>
+            <Densities2 val="0"/>
+            <DensitiesN val="0"/>
+            <Bounce val="0"/>
+            <BounceVel val="0"/>
+            <ErrorReductionParameter val="0"/>
+            <ConstraintForce val="0"/>
+            <Motion1 val="0"/>
+            <Motion2 val="0"/>
+            <ForceDependentSlip1 val="0"/>
+            <ForceDependentSlip2 val="0"/>
+            <CCD_Enable val="true"/>
+            <CCD_ListObjects>
+                <Player val="14"/>
+            </CCD_ListObjects>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <LOGIC>
+            <Script Name="SI_Interact">
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+    </GO>
+    <GO NAME="Wall" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="33.248634" y="-91.617783" z="-155.62476"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Color_Palette_Set_1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="402.74872" y="300" z="25.596668"/>
+            <GeometryOffsetPosition x="1.2450867" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <ContactMode>
+                <dContactApprox0 val="false"/>
+                <dContactApprox1 val="false"/>
+                <dContactApprox1_1 val="false"/>
+                <dContactApprox1_2 val="false"/>
+                <dContactApprox1_N val="false"/>
+                <dContactAxisDep val="false"/>
+                <dContactBounce val="false"/>
+                <dContactFDir1 val="false"/>
+                <dContactMotion1 val="false"/>
+                <dContactMotion2 val="false"/>
+                <dContactMotionN val="false"/>
+                <dContactMu2 val="false"/>
+                <dContactRolling val="false"/>
+                <dContactSlip1 val="false"/>
+                <dContactSlip2 val="false"/>
+                <dContactSoftCFM val="false"/>
+                <dContactSoftERP val="false"/>
+            </ContactMode>
+            <Friction1 val="0"/>
+            <Friction2 val="0"/>
+            <Densities1 val="0"/>
+            <Densities2 val="0"/>
+            <DensitiesN val="0"/>
+            <Bounce val="0"/>
+            <BounceVel val="0"/>
+            <ErrorReductionParameter val="0"/>
+            <ConstraintForce val="0"/>
+            <Motion1 val="0"/>
+            <Motion2 val="0"/>
+            <ForceDependentSlip1 val="0"/>
+            <ForceDependentSlip2 val="0"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="DefaultObject_10" TYPE="go_wallsegment">
+        <TRANSFORM>
+            <Position x="0" y="-196.89574" z="-56.685997"/>
+            <Scale x="2.4809999" y="0.189" z="1.01"/>
+            <Rotation x="0" y="-0" z="-4.3725485e-08" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Alarm_Clock_Digital"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="14.588516" y="19.589302" z="35.95816"/>
+            <GeometryOffsetPosition x="2.2888184e-05" y="0.3718605" z="0.00010681152"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <ContactMode>
+                <dContactApprox0 val="false"/>
+                <dContactApprox1 val="false"/>
+                <dContactApprox1_1 val="false"/>
+                <dContactApprox1_2 val="false"/>
+                <dContactApprox1_N val="false"/>
+                <dContactAxisDep val="false"/>
+                <dContactBounce val="false"/>
+                <dContactFDir1 val="false"/>
+                <dContactMotion1 val="false"/>
+                <dContactMotion2 val="false"/>
+                <dContactMotionN val="false"/>
+                <dContactMu2 val="false"/>
+                <dContactRolling val="false"/>
+                <dContactSlip1 val="false"/>
+                <dContactSlip2 val="false"/>
+                <dContactSoftCFM val="false"/>
+                <dContactSoftERP val="false"/>
+            </ContactMode>
+            <Friction1 val="0"/>
+            <Friction2 val="0"/>
+            <Densities1 val="0"/>
+            <Densities2 val="0"/>
+            <DensitiesN val="0"/>
+            <Bounce val="0"/>
+            <BounceVel val="0"/>
+            <ErrorReductionParameter val="0"/>
+            <ConstraintForce val="0"/>
+            <Motion1 val="0"/>
+            <Motion2 val="0"/>
+            <ForceDependentSlip1 val="0"/>
+            <ForceDependentSlip2 val="0"/>
+            <CCD_Enable val="true"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <LOGIC>
+            <Script Name="SI_ObjectiveManager">
+                <ObjectiveCount val="0"/>
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+    </GO>
+    <GO NAME="hintText" TYPE="go_UI">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <UITEXT>
+            <IsEnable val="true"/>
+            <Offset x="0" y="-2.5" z="0"/>
+            <Scale val="1"/>
+            <Color x="1" y="0" z="0" w="1"/>
+            <Highlight x="0" y="0" z="0" w="0"/>
+            <is2d val="true"/>
+            <Text name="Text"/>
+            <Collider x="0" y="0"/>
+        </UITEXT>
+    </GO>
+    <GO NAME="FadeScreen" TYPE="go_UI">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1e-06" y="9.9998999e-07" z="9.9998999e-07" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0.23031232" y="0.11182351" z="0.49678499"/>
+            <ScaleOffset x="5" y="5" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="pos1" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-73.242561" y="-226.44458" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="cube"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="pos2" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="74.295937" y="-226" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="cube"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="BarkInteract" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-60.37339" y="-223.2583" z="53.026707"/>
+            <Scale x="2.0999999" y="0.211" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Alarm_Clock_Digital"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="14.588516" y="19.589302" z="35.95816"/>
+            <GeometryOffsetPosition x="2.2888184e-05" y="0.3718605" z="0.00010681152"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <ContactMode>
+                <dContactApprox0 val="false"/>
+                <dContactApprox1 val="false"/>
+                <dContactApprox1_1 val="false"/>
+                <dContactApprox1_2 val="false"/>
+                <dContactApprox1_N val="false"/>
+                <dContactAxisDep val="false"/>
+                <dContactBounce val="false"/>
+                <dContactFDir1 val="false"/>
+                <dContactMotion1 val="false"/>
+                <dContactMotion2 val="false"/>
+                <dContactMotionN val="false"/>
+                <dContactMu2 val="false"/>
+                <dContactRolling val="false"/>
+                <dContactSlip1 val="false"/>
+                <dContactSlip2 val="false"/>
+                <dContactSoftCFM val="false"/>
+                <dContactSoftERP val="false"/>
+            </ContactMode>
+            <Friction1 val="0"/>
+            <Friction2 val="0"/>
+            <Densities1 val="0"/>
+            <Densities2 val="0"/>
+            <DensitiesN val="0"/>
+            <Bounce val="0"/>
+            <BounceVel val="0"/>
+            <ErrorReductionParameter val="0"/>
+            <ConstraintForce val="0"/>
+            <Motion1 val="0"/>
+            <Motion2 val="0"/>
+            <ForceDependentSlip1 val="0"/>
+            <ForceDependentSlip2 val="0"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <LOGIC>
+            <Script Name="SI_BarkInteract">
+                <Filename name=""/>
+                <Target name="object"/>
+                <Activated val="true"/>
+                <Range val="90"/>
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+    </GO>
+    <GO NAME="DefaultObject_16" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="49.034752" y="-164.99594" z="31.583982"/>
+            <Scale x="3.141" y="0.18000001" z="1.21"/>
+            <Rotation x="0" y="0" z="4.0145767e-07" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Alarm_Clock_Digital"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="14.588516" y="19.589302" z="35.95816"/>
+            <GeometryOffsetPosition x="2.2888184e-05" y="0.3718605" z="0.00010681152"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <ContactMode>
+                <dContactApprox0 val="false"/>
+                <dContactApprox1 val="false"/>
+                <dContactApprox1_1 val="false"/>
+                <dContactApprox1_2 val="false"/>
+                <dContactApprox1_N val="false"/>
+                <dContactAxisDep val="false"/>
+                <dContactBounce val="false"/>
+                <dContactFDir1 val="false"/>
+                <dContactMotion1 val="false"/>
+                <dContactMotion2 val="false"/>
+                <dContactMotionN val="false"/>
+                <dContactMu2 val="false"/>
+                <dContactRolling val="false"/>
+                <dContactSlip1 val="false"/>
+                <dContactSlip2 val="false"/>
+                <dContactSoftCFM val="false"/>
+                <dContactSoftERP val="false"/>
+            </ContactMode>
+            <Friction1 val="0"/>
+            <Friction2 val="0"/>
+            <Densities1 val="0"/>
+            <Densities2 val="0"/>
+            <DensitiesN val="0"/>
+            <Bounce val="0"/>
+            <BounceVel val="0"/>
+            <ErrorReductionParameter val="0"/>
+            <ConstraintForce val="0"/>
+            <Motion1 val="0"/>
+            <Motion2 val="0"/>
+            <ForceDependentSlip1 val="0"/>
+            <ForceDependentSlip2 val="0"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="moveObject" TYPE="go_pickupInteract">
+        <TRANSFORM>
+            <Position x="-0.28232276" y="-230.0836" z="153.22147"/>
+            <Scale x="0.5" y="0.5" z="0.5"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Bowl_Blue"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="68.437241" y="31.626759" z="68.437241"/>
+            <GeometryOffsetPosition x="0" y="5.8236141" z="0"/>
+            <HaveBody val="true"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <ContactMode>
+                <dContactApprox0 val="false"/>
+                <dContactApprox1 val="false"/>
+                <dContactApprox1_1 val="false"/>
+                <dContactApprox1_2 val="false"/>
+                <dContactApprox1_N val="false"/>
+                <dContactAxisDep val="false"/>
+                <dContactBounce val="false"/>
+                <dContactFDir1 val="false"/>
+                <dContactMotion1 val="false"/>
+                <dContactMotion2 val="false"/>
+                <dContactMotionN val="false"/>
+                <dContactMu2 val="false"/>
+                <dContactRolling val="false"/>
+                <dContactSlip1 val="false"/>
+                <dContactSlip2 val="false"/>
+                <dContactSoftCFM val="false"/>
+                <dContactSoftERP val="false"/>
+            </ContactMode>
+            <Friction1 val="0"/>
+            <Friction2 val="0"/>
+            <Densities1 val="0"/>
+            <Densities2 val="0"/>
+            <DensitiesN val="0"/>
+            <Bounce val="0"/>
+            <BounceVel val="0"/>
+            <ErrorReductionParameter val="0"/>
+            <ConstraintForce val="0"/>
+            <Motion1 val="0"/>
+            <Motion2 val="0"/>
+            <ForceDependentSlip1 val="0"/>
+            <ForceDependentSlip2 val="0"/>
+            <RbEnable val="true"/>
+            <Velocity val="true"/>
+            <AngularVelocity val="true"/>
+            <GravityEnable: val="false"/>
+            <Mass val="1"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <LOGIC>
+            <Script Name="SI_MoveInteract">
+                <Filename name=""/>
+                <Range val="80"/>
+                <Pushable val="true"/>
+                <Pullable val="true"/>
+                <LockedPos val="true"/>
+                <Static val="true"/>
+                <Forward val="false"/>
+                <Distance val="-10"/>
+                <CurrDistance val="0"/>
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+    </GO>
+    <GO NAME="Puppy2" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-34.448895" y="-220.04971" z="-42.065849"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Alarm_Clock_Digital"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="14.588516" y="19.589302" z="35.95816"/>
+            <GeometryOffsetPosition x="2.2888184e-05" y="0.3718605" z="0.00010681152"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <ContactMode>
+                <dContactApprox0 val="false"/>
+                <dContactApprox1 val="false"/>
+                <dContactApprox1_1 val="false"/>
+                <dContactApprox1_2 val="false"/>
+                <dContactApprox1_N val="false"/>
+                <dContactAxisDep val="false"/>
+                <dContactBounce val="false"/>
+                <dContactFDir1 val="false"/>
+                <dContactMotion1 val="false"/>
+                <dContactMotion2 val="false"/>
+                <dContactMotionN val="false"/>
+                <dContactMu2 val="false"/>
+                <dContactRolling val="false"/>
+                <dContactSlip1 val="false"/>
+                <dContactSlip2 val="false"/>
+                <dContactSoftCFM val="false"/>
+                <dContactSoftERP val="false"/>
+            </ContactMode>
+            <Friction1 val="0"/>
+            <Friction2 val="0"/>
+            <Densities1 val="0"/>
+            <Densities2 val="0"/>
+            <DensitiesN val="0"/>
+            <Bounce val="0"/>
+            <BounceVel val="0"/>
+            <ErrorReductionParameter val="0"/>
+            <ConstraintForce val="0"/>
+            <Motion1 val="0"/>
+            <Motion2 val="0"/>
+            <ForceDependentSlip1 val="0"/>
+            <ForceDependentSlip2 val="0"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <LOGIC>
+            <Script Name="SI_PuppyInteract">
+                <Filename name=""/>
+                <dialogFile name="PuppyDialog"/>
+                <Activated val="true"/>
+                <Range val="90"/>
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+    </GO>
+    <GO NAME="Dialog" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <UITEXT>
+            <IsEnable val="true"/>
+            <Offset x="0" y="-2.5" z="0"/>
+            <Scale val="1"/>
+            <Color x="1" y="1" z="1" w="1"/>
+            <Highlight x="0" y="0" z="0" w="0"/>
+            <is2d val="true"/>
+            <Text name="Text"/>
+            <Collider x="0" y="0"/>
+        </UITEXT>
+    </GO>
+    <GO NAME="SwivelDoor" TYPE="go_pickupInteract">
+        <TRANSFORM>
+            <Position x="90.921844" y="-130.90274" z="83.12236"/>
+            <Scale x="0.99983883" y="1" z="0.99983883"/>
+            <Rotation x="0" y="-0.002395116" z="0" w="0.99999714"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Locker_Steel_Open_Door_Left"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="8.600769" y="210.41193" z="58.230209"/>
+            <GeometryOffsetPosition x="0" y="0" z="26.675104"/>
+            <HaveBody val="true"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <ContactMode>
+                <dContactApprox0 val="false"/>
+                <dContactApprox1 val="false"/>
+                <dContactApprox1_1 val="false"/>
+                <dContactApprox1_2 val="false"/>
+                <dContactApprox1_N val="false"/>
+                <dContactAxisDep val="false"/>
+                <dContactBounce val="false"/>
+                <dContactFDir1 val="false"/>
+                <dContactMotion1 val="false"/>
+                <dContactMotion2 val="false"/>
+                <dContactMotionN val="false"/>
+                <dContactMu2 val="false"/>
+                <dContactRolling val="false"/>
+                <dContactSlip1 val="false"/>
+                <dContactSlip2 val="false"/>
+                <dContactSoftCFM val="false"/>
+                <dContactSoftERP val="false"/>
+            </ContactMode>
+            <Friction1 val="0"/>
+            <Friction2 val="0"/>
+            <Densities1 val="0"/>
+            <Densities2 val="0"/>
+            <DensitiesN val="0"/>
+            <Bounce val="0"/>
+            <BounceVel val="0"/>
+            <ErrorReductionParameter val="0"/>
+            <ConstraintForce val="0"/>
+            <Motion1 val="0"/>
+            <Motion2 val="0"/>
+            <ForceDependentSlip1 val="0"/>
+            <ForceDependentSlip2 val="0"/>
+            <RbEnable val="true"/>
+            <Velocity val="true"/>
+            <AngularVelocity val="true"/>
+            <GravityEnable: val="false"/>
+            <Mass val="1"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <LOGIC>
+            <Script Name="SI_SwivelInteract">
+                <Range val="90"/>
+                <Filename name=""/>
+                <ResultRot x="-1.1325753e-07" y="-0.91559327" z="2.7033946e-07"/>
+                <ResultQuat val="0.4021056"/>
+                <OrigRot x="0" y="-0.0023931181" z="0"/>
+                <OrigQuat val="0.99999714"/>
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+    </GO>
+    <GO NAME="moveObject2" TYPE="go_pickupInteract">
+        <TRANSFORM>
+            <Position x="-0.28232276" y="-230.0836" z="60.702377"/>
+            <Scale x="0.5" y="0.5" z="0.5"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Bowl_Blue"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="68.437241" y="31.626759" z="68.437241"/>
+            <GeometryOffsetPosition x="0" y="2.9118071" z="0"/>
+            <HaveBody val="true"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <ContactMode>
+                <dContactApprox0 val="false"/>
+                <dContactApprox1 val="false"/>
+                <dContactApprox1_1 val="false"/>
+                <dContactApprox1_2 val="false"/>
+                <dContactApprox1_N val="false"/>
+                <dContactAxisDep val="false"/>
+                <dContactBounce val="false"/>
+                <dContactFDir1 val="false"/>
+                <dContactMotion1 val="false"/>
+                <dContactMotion2 val="false"/>
+                <dContactMotionN val="false"/>
+                <dContactMu2 val="false"/>
+                <dContactRolling val="false"/>
+                <dContactSlip1 val="false"/>
+                <dContactSlip2 val="false"/>
+                <dContactSoftCFM val="false"/>
+                <dContactSoftERP val="false"/>
+            </ContactMode>
+            <Friction1 val="0"/>
+            <Friction2 val="0"/>
+            <Densities1 val="0"/>
+            <Densities2 val="0"/>
+            <DensitiesN val="0"/>
+            <Bounce val="0"/>
+            <BounceVel val="0"/>
+            <ErrorReductionParameter val="0"/>
+            <ConstraintForce val="0"/>
+            <Motion1 val="0"/>
+            <Motion2 val="0"/>
+            <ForceDependentSlip1 val="0"/>
+            <ForceDependentSlip2 val="0"/>
+            <RbEnable val="true"/>
+            <Velocity val="true"/>
+            <AngularVelocity val="true"/>
+            <GravityEnable: val="false"/>
+            <Mass val="1"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <LOGIC>
+            <Script Name="SI_MoveInteract">
+                <Filename name=""/>
+                <Range val="60"/>
+                <Pushable val="true"/>
+                <Pullable val="true"/>
+                <LockedPos val="false"/>
+                <Static val="false"/>
+                <Forward val="false"/>
+                <Distance val="0"/>
+                <CurrDistance val="0"/>
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+    </GO>
+    <GO NAME="DefaultObject_21" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Bed_Pillow"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="1" y="1" z="1"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="true"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <ContactMode>
+                <dContactApprox0 val="false"/>
+                <dContactApprox1 val="false"/>
+                <dContactApprox1_1 val="false"/>
+                <dContactApprox1_2 val="false"/>
+                <dContactApprox1_N val="false"/>
+                <dContactAxisDep val="false"/>
+                <dContactBounce val="false"/>
+                <dContactFDir1 val="false"/>
+                <dContactMotion1 val="false"/>
+                <dContactMotion2 val="false"/>
+                <dContactMotionN val="false"/>
+                <dContactMu2 val="false"/>
+                <dContactRolling val="false"/>
+                <dContactSlip1 val="false"/>
+                <dContactSlip2 val="false"/>
+                <dContactSoftCFM val="false"/>
+                <dContactSoftERP val="false"/>
+            </ContactMode>
+            <Friction1 val="0"/>
+            <Friction2 val="0"/>
+            <Densities1 val="0"/>
+            <Densities2 val="0"/>
+            <DensitiesN val="0"/>
+            <Bounce val="0"/>
+            <BounceVel val="0"/>
+            <ErrorReductionParameter val="0"/>
+            <ConstraintForce val="0"/>
+            <Motion1 val="0"/>
+            <Motion2 val="0"/>
+            <ForceDependentSlip1 val="0"/>
+            <ForceDependentSlip2 val="0"/>
+            <RbEnable val="true"/>
+            <Velocity val="true"/>
+            <AngularVelocity val="true"/>
+            <GravityEnable: val="false"/>
+            <Mass val="1"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <LOGIC>
+            <Script Name="SI_RoombaController">
+                <wayPoints>
+                    <pos1/>
+                    <pos2/>
+                </wayPoints>
+                <Waypointsize val="2"/>
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+    </GO>
+    <GO NAME="DogPlayer" TYPE="go_player" PREFAB="DogPlayer">
+        <TRANSFORM>
+            <Position x="344.43835" y="125.01337" z="-399.17932"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <SOUND>
+            <Audio Track="BGM_InGame.ogg" Type="0" sound3d="false" Volume="0.1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_DogTalk.wav" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_Bark.wav" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_Grab.wav" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_DogWalk.ogg" Type="1" sound3d="false" Volume="0.40000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_Sniff.ogg" Type="1" sound3d="false" Volume="0.40000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        </SOUND>
+        <LOGIC>
+            <Script Name="SI_PlayerController">
+                <CameraFwdScale val="-0"/>
+                <CameraUpScale val="0"/>
+                <MouseSensitivity val="3.5"/>
+                <Thrust_Accl val="5"/>
+                <Thrust_Damping val="1"/>
+                <Thrust_Max val="8"/>
+                <moveSpeed val="5000"/>
+                <climbingSpeed val="0.07"/>
+                <hoverHeight val="60"/>
+                <Thrust_Height val="7000"/>
+                <Persist val="false"/>
+            </Script>
+            <Script Name="SI_Hint">
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="20" y="15" z="20"/>
+            <GeometryOffsetPosition x="0" y="0" z="1.224762"/>
+            <HaveBody val="true"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <ContactMode>
+                <dContactApprox0 val="false"/>
+                <dContactApprox1 val="false"/>
+                <dContactApprox1_1 val="false"/>
+                <dContactApprox1_2 val="false"/>
+                <dContactApprox1_N val="false"/>
+                <dContactAxisDep val="false"/>
+                <dContactBounce val="false"/>
+                <dContactFDir1 val="false"/>
+                <dContactMotion1 val="false"/>
+                <dContactMotion2 val="false"/>
+                <dContactMotionN val="false"/>
+                <dContactMu2 val="false"/>
+                <dContactRolling val="false"/>
+                <dContactSlip1 val="false"/>
+                <dContactSlip2 val="false"/>
+                <dContactSoftCFM val="false"/>
+                <dContactSoftERP val="false"/>
+            </ContactMode>
+            <Friction1 val="0.97000002861022949"/>
+            <Friction2 val="0.97000002861022949"/>
+            <Densities1 val="0"/>
+            <Densities2 val="0"/>
+            <DensitiesN val="0"/>
+            <Bounce val="0"/>
+            <BounceVel val="0"/>
+            <ErrorReductionParameter val="0"/>
+            <ConstraintForce val="0"/>
+            <Motion1 val="0.64999997615814209"/>
+            <Motion2 val="0.64999997615814209"/>
+            <ForceDependentSlip1 val="0"/>
+            <ForceDependentSlip2 val="0"/>
+            <RbEnable val="true"/>
+            <Velocity val="true"/>
+            <AngularVelocity val="true"/>
+            <GravityEnable: val="true"/>
+            <Mass val="1"/>
+            <CCD_Enable val="true"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+</SCENE>

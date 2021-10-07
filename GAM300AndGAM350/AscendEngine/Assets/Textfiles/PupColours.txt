@@ -1,0 +1,3 @@
+puppy_albedo
+puppyvar2_albedo
+puppyvar3_albedo

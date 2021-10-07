@@ -1,0 +1,39 @@
+<GO TYPE="go_default">
+    <TRANSFORM>
+        <Position x="10.811384" y="16.997734" z="34.851109"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <PARTICLE>
+        <MAX_SIZE val="30"/>
+        <EMIT_TYPE val="1"/>
+        <TextureName name="smoke_albedo"/>
+        <startMinCol x="1" y="0.47450981" z="0" w="1"/>
+        <endMinCol x="0.80392158" y="0" z="0" w="0"/>
+        <startMaxCol x="1" y="0.3019608" z="0" w="1"/>
+        <endMaxCol x="1" y="0.43137255" z="0" w="0"/>
+        <spawnTime val="3"/>
+        <startMinScale x="0.5" y="0.5" z="0.5"/>
+        <endMinScale x="0.5" y="0.5" z="0.5"/>
+        <startMaxScale x="1" y="1" z="1"/>
+        <endMaxScale x="0.5" y="0.5" z="0.5"/>
+        <faceDirection x="0" y="0" z="1"/>
+        <minVelocity x="10" y="0" z="10"/>
+        <maxVelocity x="-10" y="0" z="-10"/>
+        <acceleration x="0" y="-9.8000002" z="0"/>
+        <startMinSpeed val="0.5"/>
+        <endMinSpeed val="0.5"/>
+        <startMaxSpeed val="1"/>
+        <endMaxSpeed val="0.5"/>
+        <minLifetime val="2"/>
+        <maxLifetime val="2"/>
+        <minRotSpeed val="0"/>
+        <maxRotSpeed val="0"/>
+        <Billboard val="true"/>
+        <isLooping val="true"/>
+        <isBlending val="false"/>
+        <isDoubleSided val="false"/>
+        <countdown val="3.4028235e+38"/>
+        <selfDestruct val="false"/>
+    </PARTICLE>
+</GO>

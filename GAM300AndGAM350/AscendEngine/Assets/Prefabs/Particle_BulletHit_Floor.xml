@@ -1,0 +1,45 @@
+<GO TYPE="go_default">
+    <PARTICLE>
+        <MAX_SIZE val="15"/>
+        <EMIT_TYPE val="1"/>
+        <TextureName name="Flare3_albedo"/>
+        <startMinCol x="1" y="0.62068796" z="0" w="1"/>
+        <endMinCol x="0.97647059" y="0.92548978" z="0.2470589" w="1"/>
+        <startMaxCol x="1" y="0.46095914" z="0.022988498" w="1"/>
+        <endMaxCol x="1" y="0.4470588" z="0" w="1"/>
+        <spawnTime val="3"/>
+        <startMinScale x="0.80000001" y="0.80000001" z="0.80000001"/>
+        <endMinScale x="0.2" y="1.5" z="0.2"/>
+        <startMaxScale x="1" y="1" z="1"/>
+        <endMaxScale x="0.2" y="2" z="0.2"/>
+        <faceDirection x="0" y="0" z="1"/>
+        <minVelocity x="50" y="10" z="-50"/>
+        <maxVelocity x="-100" y="150" z="100"/>
+        <acceleration x="0" y="-150" z="0"/>
+        <startMinSpeed val="1"/>
+        <endMinSpeed val="2"/>
+        <startMaxSpeed val="5"/>
+        <endMaxSpeed val="10"/>
+        <minLifetime val="1"/>
+        <maxLifetime val="2"/>
+        <minRotSpeed val="0"/>
+        <maxRotSpeed val="0"/>
+        <Billboard val="true"/>
+        <isLooping val="false"/>
+        <isBlending val="true"/>
+        <isDoubleSided val="false"/>
+        <countdown val="3.4028235e+38"/>
+        <selfDestruct val="false"/>
+    </PARTICLE>
+    <TRANSFORM>
+        <Position x="19.623407" y="1.4479104" z="-2.3091736"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <LOGIC>
+        <Script Name="SI_SelfDestruct">
+            <Timer val="3"/>
+            <Persist val="false"/>
+        </Script>
+    </LOGIC>
+</GO>

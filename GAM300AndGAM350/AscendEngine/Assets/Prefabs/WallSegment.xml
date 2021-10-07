@@ -1,0 +1,24 @@
+<GO TYPE="go_wallsegment">
+    <TRANSFORM>
+        <Position x="0" y="0" z="0"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <GRAPHICS>
+        <Color x="1" y="1" z="1" w="1"/>
+        <isInterface val="false"/>
+        <FromWorld val="false"/>
+        <UIautoScale val="true"/>
+        <DiffuseMap name="WallSegment_albedo"/>
+        <AOMap name="Blank"/>
+        <GlossMap name="Blank"/>
+        <NormalMap name="Blank"/>
+        <Roughness val="1"/>
+        <Metalic val="0"/>
+        <Model name="WallSegment"/>
+        <PositionOffset x="0" y="-20.810001" z="0"/>
+        <ScaleOffset x="1" y="1" z="1"/>
+        <UVOffset x="0" y="0"/>
+        <Tiled x="1" y="1"/>
+    </GRAPHICS>
+</GO>

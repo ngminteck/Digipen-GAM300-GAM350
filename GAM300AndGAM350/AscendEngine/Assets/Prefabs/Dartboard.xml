@@ -1,0 +1,157 @@
+<GO TYPE="go_default">
+    <TRANSFORM>
+        <Position x="-1390.906" y="190.83186" z="-1063.4657"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <GRAPHICS>
+        <IsEnable val="true"/>
+        <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+        <isInterface val="false"/>
+        <FromWorld val="false"/>
+        <UIautoScale val="true"/>
+        <MaterialSize val="2"/>
+        <DiffuseMap0 name="Gambling_Textures_albedo"/>
+        <AOMap0 name="Blank"/>
+        <GlossMap0 name="Blank"/>
+        <NormalMap0 name="Blank"/>
+        <Roughness0 val="5"/>
+        <Metalic0 val="0"/>
+        <DiffuseMap1 name="Color_Palette_Set_1_albedo"/>
+        <AOMap1 name="Blank"/>
+        <GlossMap1 name="Blank"/>
+        <NormalMap1 name="Blank"/>
+        <Roughness1 val="5"/>
+        <Metalic1 val="0"/>
+        <Model name="Dartboard"/>
+        <PositionOffset x="0" y="0" z="0"/>
+        <ScaleOffset x="1" y="1" z="1"/>
+        <UVOffset x="0" y="0"/>
+        <Tiled x="1" y="1"/>
+        <zRotation val="0"/>
+    </GRAPHICS>
+    <NEWPHYSICS>
+        <IsEnable val="true"/>
+        <Geometry name="BOX"/>
+        <GeomBoxGetLengths x="1" y="1" z="1"/>
+        <GeometryOffsetPosition x="0" y="0" z="0"/>
+        <HaveBody val="false"/>
+        <CollisionEnable val="true"/>
+        <PhysicsSurfaceEnable val="true"/>
+        <CCD_Enable val="false"/>
+        <CCD_ListObjects/>
+        <IgnoreList/>
+        <HaveTriggerBox val="false"/>
+        <IgnoreListRay/>
+        <IgnoreListFloorRay/>
+    </NEWPHYSICS>
+    <PHYSICS>
+        <IsEnabled val="true"/>
+        <Force x="0" y="0" z="0"/>
+        <Mass val="8"/>
+        <InverseMass val="0.125"/>
+        <StaticFriction val="0.40000001"/>
+        <DynamicFriction val="0.2"/>
+        <Restitution val="1"/>
+        <LinearDamping val="0.0049999999"/>
+        <Static val="false"/>
+        <Trigger val="false"/>
+        <UseGravity val="true"/>
+        <AllowRayCast val="true"/>
+        <ColliderType val="0"/>
+        <Radius val="0.5"/>
+        <ForceMultiplier val="1"/>
+        <ColliderOffset x="0" y="0" z="0"/>
+        <CollisionFilterList>
+            <TRIGGER>IGNORE</TRIGGER>
+            <STATIC>IGNORE</STATIC>
+            <DYNAMIC>IGNORE</DYNAMIC>
+            <PLAYER>IGNORE</PLAYER>
+            <OTHER>IGNORE</OTHER>
+        </CollisionFilterList>
+    </PHYSICS>
+</GO>
+
+<PARENTING NUM="3">
+    <CHILD_GO NAME="Cards_Dart" TYPE="go_default" INDEX="1" PARENT="0">
+        <TRANSFORM LOCAL="true">
+            <Position x="14.721313" y="12.759247" z="-12.26709"/>
+            <Scale x="0.9997049" y="0.99960804" z="0.99959868"/>
+            <Rotation x="-0.52438986" y="0.69929463" z="0.10445471" w="0.47443825"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Gambling_Textures_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="0.5"/>
+            <Metalic0 val="0"/>
+            <Model name="PlayingCard_Hearts_Red"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </CHILD_GO>
+    <CHILD_GO NAME="Cards_Dart" TYPE="go_default" INDEX="2" PARENT="0">
+        <TRANSFORM LOCAL="true">
+            <Position x="14.721313" y="4.2259521" z="15.248047"/>
+            <Scale x="0.99975324" y="0.99960953" z="0.99960309"/>
+            <Rotation x="-0.33373025" y="0.62308782" z="0.33398768" w="0.62356871"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Gambling_Textures_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="0.5"/>
+            <Metalic0 val="0"/>
+            <Model name="PlayingCard_Diamonds_Green"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </CHILD_GO>
+    <CHILD_GO NAME="Cards_Dart" TYPE="go_default" INDEX="3" PARENT="0">
+        <TRANSFORM LOCAL="true">
+            <Position x="14.721313" y="-18.243744" z="-10.956299"/>
+            <Scale x="0.99972135" y="0.99962437" z="0.99960399"/>
+            <Rotation x="0.35539329" y="-0.35104275" z="0.63338852" w="0.59100205"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Gambling_Textures_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="0.5"/>
+            <Metalic0 val="0"/>
+            <Model name="PlayingCard_Hearts_Red"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </CHILD_GO>
+</PARENTING>

@@ -1,0 +1,75 @@
+<GO TYPE="go_player">
+    <TRANSFORM>
+        <Position x="-25.83078" y="72.555748" z="-12.729309"/>
+        <Scale x="0.99999994" y="1" z="0.99999994"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <SOUND>
+        <Audio Track="BGM_InGame.ogg" Type="0" sound3d="false" Volume="0.1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_DogTalk.wav" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Bark.wav" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Grab.wav" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Land.ogg" Type="1" sound3d="true" Volume="0.1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_DogWalk.ogg" Type="1" sound3d="false" Volume="0.40000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Sniff.ogg" Type="1" sound3d="false" Volume="0.40000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Jump.ogg" Type="1" sound3d="false" Volume="0.40000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_DogWalkSlow.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_DogTalk1.ogg" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_DogTalk2.ogg" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_DogTalk3.ogg" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Pant.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Whine.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+    </SOUND>
+    <LOGIC>
+        <Script Name="SI_PlayerController">
+            <CameraFwdScale val="-0"/>
+            <CameraUpScale val="0"/>
+            <MouseSensitivity val="3.5"/>
+            <Thrust_Accl val="5"/>
+            <Thrust_Damping val="1"/>
+            <Thrust_Max val="8"/>
+            <moveSpeed val="5000"/>
+            <climbingSpeed val="0.07"/>
+            <hoverHeight val="60"/>
+            <Thrust_Height val="6250"/>
+            <SpawnForward x="0.5724557" y="-0.012961772" z="-0.81982791"/>
+            <rayFloorLen val="100"/>
+            <rayOffSet x="0" y="-5" z="0"/>
+            <addtionalGravForce val="-200"/>
+            <limitToStartApplying val="200"/>
+            <Persist val="false"/>
+        </Script>
+        <Script Name="SI_Hint">
+            <Persist val="false"/>
+        </Script>
+        <Script Name="SI_Scent">
+            <objective name=""/>
+            <Persist val="false"/>
+        </Script>
+    </LOGIC>
+    <NEWPHYSICS>
+        <IsEnable val="true"/>
+        <Geometry name="BOX"/>
+        <GeomBoxGetLengths x="20" y="15" z="20"/>
+        <GeometryOffsetPosition x="0" y="0" z="1.224762"/>
+        <HaveBody val="true"/>
+        <CollisionEnable val="true"/>
+        <PhysicsSurfaceEnable val="true"/>
+        <RbEnable val="true"/>
+        <Velocity val="true"/>
+        <AngularVelocity val="true"/>
+        <GravityEnable: val="true"/>
+        <prevGrav val="true"/>
+        <Mass val="1"/>
+        <CCD_Enable val="true"/>
+        <CCD_ListObjects/>
+        <IgnoreList/>
+        <HaveTriggerBox val="true"/>
+        <TriggerGeomBoxGetLengths x="10" y="5" z="10"/>
+        <TriggerGeometryOffsetPosition x="0" y="0" z="1.224762"/>
+        <TriggerCollisionEnable val="true"/>
+        <IgnoreListTrigger/>
+        <IgnoreListRay/>
+        <IgnoreListFloorRay/>
+    </NEWPHYSICS>
+</GO>

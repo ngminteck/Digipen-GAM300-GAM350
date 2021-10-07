@@ -1,0 +1,110 @@
+<SCENE>
+    <GO NAME="PauseMenuBG" TYPE="go_default" PREFAB="PauseMenuBG">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_PauseMenu_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="3.2" y="2" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="PawSelector" TYPE="go_default" PREFAB="PawSelector">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_paw_selector1_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="-0.25" y="-0.050000001" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="QuitButton" TYPE="go_default" PREFAB="QuitButton">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_PauseMenuButtons_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_SmallQuad"/>
+            <PositionOffset x="0.12" y="-0.2" z="0"/>
+            <ScaleOffset x="1.5" y="1.5" z="1"/>
+            <UVOffset x="0" y="0.2"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="ResumeButton" TYPE="go_default" PREFAB="ResumeButton">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_PauseMenuButtons_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_SmallQuad"/>
+            <PositionOffset x="0.079999998" y="-0.050000001" z="0"/>
+            <ScaleOffset x="1.5" y="1.5" z="1"/>
+            <UVOffset x="0.64999998" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+</SCENE>

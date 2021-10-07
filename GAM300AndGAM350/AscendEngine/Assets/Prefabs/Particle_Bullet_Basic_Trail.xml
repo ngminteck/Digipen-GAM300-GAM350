@@ -1,0 +1,55 @@
+<GO TYPE="go_default">
+    <TRANSFORM>
+        <Position x="-13.290224" y="0" z="26.851871"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <PARTICLE>
+        <MAX_SIZE val="200"/>
+        <EMIT_TYPE val="0"/>
+        <TextureName name="Flare2_albedo"/>
+        <startMinCol x="1" y="0.13793105" z="0" w="0.58823532"/>
+        <endMinCol x="0.60784316" y="0.60784316" z="0.60784316" w="0.19607843"/>
+        <startMaxCol x="0.93678159" y="0.40916896" z="0.40916896" w="0.58823532"/>
+        <endMaxCol x="0.60784316" y="0.60784316" z="0.60784316" w="0.19607843"/>
+        <spawnTime val="0.0099999998"/>
+        <startMinScale x="3" y="3" z="3"/>
+        <endMinScale x="1" y="1" z="1"/>
+        <startMaxScale x="3.5" y="3.5" z="3.5"/>
+        <endMaxScale x="1" y="1" z="1"/>
+        <faceDirection x="0" y="0" z="1"/>
+        <minVelocity x="0" y="0" z="0"/>
+        <maxVelocity x="0" y="0" z="0"/>
+        <acceleration x="0" y="0" z="0"/>
+        <startMinSpeed val="1"/>
+        <endMinSpeed val="2"/>
+        <startMaxSpeed val="1"/>
+        <endMaxSpeed val="2"/>
+        <minLifetime val="1"/>
+        <maxLifetime val="2"/>
+        <minRotSpeed val="0"/>
+        <maxRotSpeed val="0"/>
+        <Billboard val="true"/>
+        <isLooping val="true"/>
+        <isBlending val="false"/>
+        <isDoubleSided val="false"/>
+        <countdown val="3.4028235e+38"/>
+        <selfDestruct val="false"/>
+    </PARTICLE>
+    <PHYSICS>
+        <Force x="0" y="0" z="0"/>
+        <Mass val="1"/>
+        <InverseMass val="0.125"/>
+        <StaticFriction val="0.40000001"/>
+        <DynamicFriction val="0.2"/>
+        <Restitution val="0"/>
+        <LinearDamping val="100"/>
+        <Trigger val="true"/>
+        <UseGravity val="false"/>
+        <AllowRayCast val="false"/>
+        <ColliderType val="0"/>
+        <Radius val="0.5"/>
+        <ForceMultiplier val="1000"/>
+        <ColliderOffset x="0" y="0" z="0"/>
+    </PHYSICS>
+</GO>

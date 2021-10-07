@@ -1,0 +1,27 @@
+<GO TYPE="go_default">
+    <TRANSFORM>
+        <Position x="256" y="293.9277" z="-9.5367432e-07"/>
+        <Scale x="1.75" y="1" z="1.86"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <GRAPHICS>
+        <IsEnable val="true"/>
+        <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+        <isInterface val="false"/>
+        <FromWorld val="false"/>
+        <UIautoScale val="true"/>
+        <MaterialSize val="1"/>
+        <DiffuseMap0 name="Color_Palette_Set_2_albedo"/>
+        <AOMap0 name="Blank"/>
+        <GlossMap0 name="Blank"/>
+        <NormalMap0 name="Blank"/>
+        <Roughness0 val="5"/>
+        <Metalic0 val="0"/>
+        <Model name="Ceiling_Ledge_MidPiece"/>
+        <PositionOffset x="0" y="0" z="0"/>
+        <ScaleOffset x="1" y="1" z="1"/>
+        <UVOffset x="0" y="0"/>
+        <Tiled x="1" y="1"/>
+        <zRotation val="0"/>
+    </GRAPHICS>
+</GO>

@@ -1,0 +1,72 @@
+<GO TYPE="go_default">
+    <TRANSFORM>
+        <Position x="-1284.5212" y="36.927387" z="-1334.8562"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <GRAPHICS>
+        <IsEnable val="true"/>
+        <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+        <isInterface val="false"/>
+        <FromWorld val="false"/>
+        <UIautoScale val="true"/>
+        <MaterialSize val="1"/>
+        <DiffuseMap0 name="Plant_Texture_Set_albedo"/>
+        <AOMap0 name="Blank"/>
+        <GlossMap0 name="Blank"/>
+        <NormalMap0 name="Blank"/>
+        <Roughness0 val="1"/>
+        <Metalic0 val="0"/>
+        <Model name="Potted_Plant_Large"/>
+        <PositionOffset x="0" y="0" z="0"/>
+        <ScaleOffset x="1" y="1" z="1"/>
+        <UVOffset x="0" y="0"/>
+        <Tiled x="1" y="1"/>
+        <zRotation val="0"/>
+    </GRAPHICS>
+</GO>
+
+<PARENTING NUM="1">
+    <CHILD_GO NAME="Plant_Collider_2" TYPE="go_default" INDEX="1" PARENT="0">
+        <TRANSFORM LOCAL="true">
+            <Position x="-6.3840332" y="-25.589104" z="-0.3067627"/>
+            <Scale x="6.6399999" y="10.56" z="6.5"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="1" y="1" z="1"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <GRAPHICS>
+            <IsEnable val="false"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="cube"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </CHILD_GO>
+</PARENTING>

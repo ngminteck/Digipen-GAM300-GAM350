@@ -1,0 +1,12 @@
+<GO TYPE="go_default">
+    <TRANSFORM>
+        <Position x="309.39896" y="56.100395" z="66.404778"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <LOGIC>
+        <Script Name="SI_TutorialManager">
+            <Persist val="false"/>
+        </Script>
+    </LOGIC>
+</GO>

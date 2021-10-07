@@ -1,0 +1,81 @@
+<GO TYPE="go_default">
+    <TRANSFORM>
+        <Position x="34.466629" y="0" z="34.481735"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <PARTICLE>
+        <MAX_SIZE val="100"/>
+        <EMIT_TYPE val="0"/>
+        <TextureName name="Flare2_albedo"/>
+        <startMinCol x="0.79607844" y="0" z="0" w="1"/>
+        <endMinCol x="0.7647059" y="0.53725493" z="0" w="0.52156866"/>
+        <startMaxCol x="0.94901961" y="0.47843137" z="0" w="1"/>
+        <endMaxCol x="0.57647061" y="0.42745098" z="0" w="0.62352943"/>
+        <spawnTime val="0.029999999"/>
+        <startMinScale x="4" y="4" z="4"/>
+        <endMinScale x="0.050000001" y="0.050000001" z="0.050000001"/>
+        <startMaxScale x="5" y="5" z="5"/>
+        <endMaxScale x="0.1" y="0.1" z="0.1"/>
+        <faceDirection x="0" y="0" z="1"/>
+        <minVelocity x="5" y="25" z="5"/>
+        <maxVelocity x="-5" y="30" z="-5"/>
+        <acceleration x="0" y="0" z="0"/>
+        <startMinSpeed val="1.5"/>
+        <endMinSpeed val="1"/>
+        <startMaxSpeed val="1.5"/>
+        <endMaxSpeed val="1"/>
+        <minLifetime val="1"/>
+        <maxLifetime val="1"/>
+        <minRotSpeed val="0"/>
+        <maxRotSpeed val="0"/>
+        <Billboard val="true"/>
+        <isLooping val="true"/>
+        <isBlending val="true"/>
+        <isDoubleSided val="false"/>
+        <countdown val="3.4028235e+38"/>
+        <selfDestruct val="false"/>
+    </PARTICLE>
+</GO>
+
+<PARENTING NUM="1">
+    <CHILD_GO NAME="Particle_Building_Smoke" TYPE="go_default" INDEX="1" PARENT="0">
+        <TRANSFORM LOCAL="true">
+            <Position x="-1.2003676" y="0" z="-0.7208252"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <PARTICLE>
+            <MAX_SIZE val="50"/>
+            <EMIT_TYPE val="0"/>
+            <TextureName name="Flare2_albedo"/>
+            <startMinCol x="0" y="0" z="0" w="0.58823532"/>
+            <endMinCol x="0.60784316" y="0.60784316" z="0.60784316" w="0.19607843"/>
+            <startMaxCol x="0.19607843" y="0.19607843" z="0.19607843" w="0.58823532"/>
+            <endMaxCol x="0.60784316" y="0.60784316" z="0.60784316" w="0.19607843"/>
+            <spawnTime val="0.2"/>
+            <startMinScale x="3" y="3" z="3"/>
+            <endMinScale x="1" y="1" z="1"/>
+            <startMaxScale x="3.5" y="3.5" z="3.5"/>
+            <endMaxScale x="1" y="1" z="1"/>
+            <faceDirection x="0" y="0" z="1"/>
+            <minVelocity x="5" y="20" z="5"/>
+            <maxVelocity x="-5" y="25" z="-5"/>
+            <acceleration x="0" y="0" z="0"/>
+            <startMinSpeed val="1"/>
+            <endMinSpeed val="2"/>
+            <startMaxSpeed val="1"/>
+            <endMaxSpeed val="2"/>
+            <minLifetime val="5"/>
+            <maxLifetime val="6"/>
+            <minRotSpeed val="0"/>
+            <maxRotSpeed val="0"/>
+            <Billboard val="true"/>
+            <isLooping val="true"/>
+            <isBlending val="false"/>
+            <isDoubleSided val="false"/>
+            <countdown val="3.4028235e+38"/>
+            <selfDestruct val="false"/>
+        </PARTICLE>
+    </CHILD_GO>
+</PARENTING>

@@ -1,0 +1,305 @@
+<GO TYPE="go_tower">
+    <TRANSFORM>
+        <Position x="0" y="10" z="0"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <GRAPHICS>
+        <Color x="1" y="1" z="1" w="1"/>
+        <isInterface val="false"/>
+        <FromWorld val="false"/>
+        <UIautoScale val="true"/>
+        <DiffuseMap name="Blank"/>
+        <AOMap name="Blank"/>
+        <GlossMap name="Blank"/>
+        <NormalMap name="Blank"/>
+        <Roughness val="5"/>
+        <Metalic val="0"/>
+        <Model name="Tower_Base"/>
+        <PositionOffset x="0" y="0" z="0"/>
+        <ScaleOffset x="1" y="1" z="1"/>
+        <UVOffset x="0" y="0"/>
+        <Tiled x="1" y="1"/>
+    </GRAPHICS>
+    <LOGIC>
+        <Script Name="SI_Tower">
+            <Target targetCount="1">
+                <TargetType type="go_enemy"/>
+            </Target>
+            <Scale val="15.5"/>
+            <CooldownLimit val="0.5"/>
+            <MaxRange val="30"/>
+            <Dmg_per_shot val="10"/>
+            <Persist val="false"/>
+        </Script>
+        <Script Name="SI_Health">
+            <Health val="25"/>
+            <Invulnerable val="false"/>
+            <ShowHealthBar val="false"/>
+            <OnDeathPrefabToLoad name=""/>
+            <PosYOffset val="0"/>
+            <Persist val="false"/>
+        </Script>
+    </LOGIC>
+    <SOUND count="0"/>
+    <PHYSICS>
+        <Force x="0" y="0" z="0"/>
+        <Mass val="0"/>
+        <InverseMass val="0"/>
+        <StaticFriction val="0.40000001"/>
+        <DynamicFriction val="0.2"/>
+        <Restitution val="1"/>
+        <LinearDamping val="0.0049999999"/>
+        <Trigger val="false"/>
+        <UseGravity val="false"/>
+        <AllowRayCast val="true"/>
+        <ColliderType val="1"/>
+        <Min x="-2.5" y="-1.5" z="-2.5"/>
+        <Max x="2.5" y="1.5" z="2.5"/>
+        <ForceMultiplier val="500"/>
+        <ColliderOffset x="0" y="0" z="0"/>
+    </PHYSICS>
+</GO>
+
+<PARENTING NUM="6">
+    <CHILD_GO NAME="Tower_Basic_Turret" TYPE="go_turret" INDEX="1" PARENT="0">
+        <TRANSFORM LOCAL="true">
+            <Position x="3.0252652" y="6.9023113" z="-3.1325369"/>
+            <Scale x="0.99999964" y="1" z="0.99999964"/>
+            <Rotation x="0" y="0.25881904" z="0" w="0.96592581"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="1" z="1" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Tower_Basic_Turret"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Trigger val="true"/>
+            <UseGravity val="false"/>
+            <AllowRayCast val="false"/>
+            <ColliderType val="0"/>
+            <Radius val="30"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+        </PHYSICS>
+    </CHILD_GO>
+    <CHILD_GO NAME="Tower_Basic_Turret" TYPE="go_turret" INDEX="2" PARENT="1">
+        <TRANSFORM LOCAL="true">
+            <Position x="4.8695025" y="6.4332809" z="2.7198317"/>
+            <Scale x="0.99999964" y="1" z="0.99999964"/>
+            <Rotation x="0" y="0.17364886" z="0" w="0.98480761"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="1" z="1" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Tower_Basic_Turret"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Trigger val="true"/>
+            <UseGravity val="false"/>
+            <AllowRayCast val="false"/>
+            <ColliderType val="0"/>
+            <Radius val="30"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+        </PHYSICS>
+    </CHILD_GO>
+    <CHILD_GO NAME="Tower_Basic_Turret" TYPE="go_turret" INDEX="3" PARENT="0">
+        <TRANSFORM LOCAL="true">
+            <Position x="-11.110062" y="6.9023113" z="-5.2777076"/>
+            <Scale x="0.99999964" y="1" z="0.99999964"/>
+            <Rotation x="0" y="-0.25881904" z="0" w="0.96592581"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="1" z="1" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Tower_Basic_Turret"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Trigger val="true"/>
+            <UseGravity val="false"/>
+            <AllowRayCast val="false"/>
+            <ColliderType val="0"/>
+            <Radius val="30"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+        </PHYSICS>
+    </CHILD_GO>
+    <CHILD_GO NAME="Tower_Basic_Turret" TYPE="go_turret" INDEX="4" PARENT="3">
+        <TRANSFORM LOCAL="true">
+            <Position x="0" y="9.379612" z="0"/>
+            <Scale x="0.99999964" y="1" z="0.99999964"/>
+            <Rotation x="0" y="-0.17364886" z="0" w="0.98480761"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="1" z="1" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Tower_Basic_Turret"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Trigger val="true"/>
+            <UseGravity val="false"/>
+            <AllowRayCast val="false"/>
+            <ColliderType val="0"/>
+            <Radius val="30"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+        </PHYSICS>
+    </CHILD_GO>
+    <CHILD_GO NAME="Tower_Basic_Turret" TYPE="go_turret" INDEX="5" PARENT="0">
+        <TRANSFORM LOCAL="true">
+            <Position x="16.150705" y="11.370083" z="3.6115463"/>
+            <Scale x="0.99999964" y="1" z="0.99999964"/>
+            <Rotation x="0" y="0.25882345" z="0" w="0.96592462"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="1" z="1" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Tower_Basic_Turret"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Trigger val="true"/>
+            <UseGravity val="false"/>
+            <AllowRayCast val="false"/>
+            <ColliderType val="0"/>
+            <Radius val="30"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+        </PHYSICS>
+    </CHILD_GO>
+    <CHILD_GO NAME="Tower_Basic_Turret" TYPE="go_turret" INDEX="6" PARENT="5">
+        <TRANSFORM LOCAL="true">
+            <Position x="4.8695025" y="6.4332809" z="2.7198317"/>
+            <Scale x="0.99999964" y="1" z="0.99999964"/>
+            <Rotation x="0" y="0.17364886" z="0" w="0.98480761"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="1" z="1" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Tower_Basic_Turret"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Trigger val="true"/>
+            <UseGravity val="false"/>
+            <AllowRayCast val="false"/>
+            <ColliderType val="0"/>
+            <Radius val="30"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+        </PHYSICS>
+    </CHILD_GO>
+</PARENTING>

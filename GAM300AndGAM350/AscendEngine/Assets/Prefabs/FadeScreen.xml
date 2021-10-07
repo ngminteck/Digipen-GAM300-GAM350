@@ -1,0 +1,26 @@
+<GO TYPE="go_UI">
+    <TRANSFORM>
+        <Position x="0" y="0" z="0"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <GRAPHICS>
+        <IsEnable val="true"/>
+        <Color x="1e-06" y="9.9998999e-07" z="9.9998999e-07" w="0"/>
+        <isInterface val="true"/>
+        <FromWorld val="false"/>
+        <UIautoScale val="true"/>
+        <DiffuseMap name="Blank"/>
+        <AOMap name="Blank"/>
+        <GlossMap name="Blank"/>
+        <NormalMap name="Blank"/>
+        <Roughness val="5"/>
+        <Metalic val="0"/>
+        <Model name="UI_Quad"/>
+        <PositionOffset x="0.23031232" y="0.11182351" z="0.49678499"/>
+        <ScaleOffset x="5" y="5" z="1"/>
+        <UVOffset x="0" y="0"/>
+        <Tiled x="1" y="1"/>
+        <zRotation val="0"/>
+    </GRAPHICS>
+</GO>

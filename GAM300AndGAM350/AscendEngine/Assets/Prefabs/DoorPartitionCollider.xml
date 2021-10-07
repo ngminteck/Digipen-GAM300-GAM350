@@ -1,0 +1,42 @@
+<GO TYPE="go_default">
+    <TRANSFORM>
+        <Position x="136.40283" y="150" z="-150.77908"/>
+        <Scale x="0.25" y="1" z="1"/>
+        <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+    </TRANSFORM>
+    <GRAPHICS>
+        <IsEnable val="false"/>
+        <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+        <isInterface val="false"/>
+        <FromWorld val="false"/>
+        <UIautoScale val="true"/>
+        <MaterialSize val="1"/>
+        <DiffuseMap0 name="Blank"/>
+        <AOMap0 name="Blank"/>
+        <GlossMap0 name="Blank"/>
+        <NormalMap0 name="Blank"/>
+        <Roughness0 val="5"/>
+        <Metalic0 val="0"/>
+        <Model name="Wall_Segment_0.2x3x4"/>
+        <PositionOffset x="0" y="0" z="0"/>
+        <ScaleOffset x="1" y="1" z="1"/>
+        <UVOffset x="0" y="0"/>
+        <Tiled x="1" y="1"/>
+        <zRotation val="0"/>
+    </GRAPHICS>
+    <NEWPHYSICS>
+        <IsEnable val="true"/>
+        <Geometry name="BOX"/>
+        <GeomBoxGetLengths x="402.74872" y="300" z="25.596668"/>
+        <GeometryOffsetPosition x="0.31127167" y="0" z="0"/>
+        <HaveBody val="false"/>
+        <CollisionEnable val="true"/>
+        <PhysicsSurfaceEnable val="true"/>
+        <CCD_Enable val="false"/>
+        <CCD_ListObjects/>
+        <IgnoreList/>
+        <HaveTriggerBox val="false"/>
+        <IgnoreListRay/>
+        <IgnoreListFloorRay/>
+    </NEWPHYSICS>
+</GO>

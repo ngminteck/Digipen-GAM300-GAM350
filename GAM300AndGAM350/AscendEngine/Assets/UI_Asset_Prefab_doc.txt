@@ -1,0 +1,136 @@
+Name: PowerStatus 
+position: top,centre
+prefab: HUD_Power
+Texture: UI_Status_albedo
+Creation: in script TeleportBeacon.cpp
+
+Name: PowerStatus text
+position: top,centre
+prefab: HUD_PowerText
+Texture: UI_PowerText_albedo
+Creation: in script TeleportBeacon.cpp
+
+Name: Drone Overall HUD
+position: Fullscreen, centre
+prefab: HUD_Overall
+Texture: HUD_Drone_albedo
+Creation: in script PlayerController.cpp
+
+Name: Center arrow / pointer arrow
+position: centre
+prefab: HUD_Build
+Texture: UI_Build_albedo
+Creation: in script PlayerShoot.cpp
+
+//x4
+Name: Center arrow / pointer arrow
+position: centre
+prefab: HUD_Build_1mini
+Texture: UI_Build_1mini_albedo
+Creation: in script PlayerShoot.cpp
+
+
+Name: Minus scrap
+position: according to scrap resource position in UI
+prefab: UI_Minus_Scrap
+Texture: UI_Minus_Scrap_albedo
+Creation: in script PlayerBuild.cpp
+
+Name: using weapon indicator / the cross hair
+position: centre
+prefab: HUD_Weapon
+Texture: UI_Reticle_albedo
+Creation: in script PlayerWeapon.cpp
+
+Name: Scrap resource crystal
+position: enemy death position
+prefab: MoneyUI
+Texture: Resource_Icon_albedo
+Creation: spawn upon enemy death
+
+Name: resource crystal Icon in HUD
+position: screen bottom, right
+prefab: HUD_Resource_Icon
+Texture: Resource_Icon_albedo
+Creation: in 
+
+
+Name: Gun expiry indicator
+position: screen off centre right
+prefab: HUD_gun_expiry
+Texture: UI_Expiry_Gun_albedo
+Creation: appear upon gun pick up
+
+Name: Dot in center of screen
+position: center of screen
+prefab: UI_center
+Texture: UI_HardCircle
+Creation: in PlayerShoot.cpp
+
+Name: Square that appear centre
+position: Centre of screen when shooting
+prefab: HUD_Squarish
+Texture: hollow_square_albedo
+Creation: in PlayerShoot.cpp
+
+Name: Pickup weapon action box
+position: Where the to be pick up tower will be
+prefab: HUD_WeaponPickUp
+Texture: ActionBox_albedo
+Creation: in PlayerWeapon.cpp
+
+Name: Upgrade weapon action box
+position: if a tower is upgradable
+prefab: HUD_TowerUpgrade
+Texture: UpgradeBox_albedo
+Creation: in PlayerWeapon.cpp
+
+Name: Weapon GunText indicator
+position: Bottom, left
+prefab: UI_GunText_*
+Texture: UI_GunText_*_albedo
+Creation: in PlayerWeapon.cpp
+
+
+Name: Harvester health indicator
+position: HUD Top right
+prefab: HUD_Harvester_health
+Texture: Sil_Harvester_albedo
+Creation: in Harvester.cpp
+
+Name: Powerplant health indicator
+position: HUD Top left
+prefab: HUD_Powerplant_health
+Texture: Sil_PowerGen_albedo
+Creation: in Powerplant.cpp
+
+Name: TeleportBeacon health indicator
+position: HUD Top right
+prefab: HUD_TeleportBeacon_health
+Texture: Sil_Beacon_albedo
+Creation: in TeleportBeacon.cpp
+
+Name: press any key
+position: right bottom
+prefab: UI_PRESS_ANYKEY
+Texture: UI_Press_AnyKey_albedo
+Creation: endgamescript
+
+Name: End game congrats message
+position: center
+prefab: UI_ENDGAME_SCREEN
+Texture: UI_End_Game_Screen_albedo
+Creation: EndGameScript
+
+Name: End game credts
+position: center
+prefab: UI_ENDGAME_CREDITS
+Texture: UI_Credits_albedo
+Creation: EndGameScript
+
+Name: 
+position: 
+prefab: 
+Texture: 
+Creation: 
+

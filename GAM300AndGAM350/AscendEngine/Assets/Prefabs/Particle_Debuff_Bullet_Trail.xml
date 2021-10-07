@@ -1,0 +1,43 @@
+<GO TYPE="go_default">
+    <PARTICLE>
+        <MAX_SIZE val="100"/>
+        <EMIT_TYPE val="0"/>
+        <TextureName name="Shockwave_albedo"/>
+        <startMinCol x="1" y="0.58333308" z="0" w="1"/>
+        <endMinCol x="1" y="0.99998999" z="0.99998999" w="0"/>
+        <startMaxCol x="1" y="0.65517241" z="0" w="1"/>
+        <endMaxCol x="1" y="0.99998999" z="0.99998999" w="0"/>
+        <spawnTime val="0.050000001"/>
+        <spawnDelay val="0"/>
+        <startMinScale x="2" y="2" z="2"/>
+        <endMinScale x="5" y="5" z="5"/>
+        <startMaxScale x="2" y="2" z="2"/>
+        <endMaxScale x="5" y="5" z="5"/>
+        <faceDirection x="0" y="0" z="1"/>
+        <minVelocity x="0" y="0" z="0"/>
+        <maxVelocity x="0" y="0" z="0"/>
+        <acceleration x="0" y="0" z="0"/>
+        <startMinSpeed val="2"/>
+        <endMinSpeed val="2"/>
+        <startMaxSpeed val="2"/>
+        <endMaxSpeed val="2"/>
+        <minLifetime val="0.80000001"/>
+        <maxLifetime val="0.80000001"/>
+        <minRotSpeed val="0"/>
+        <maxRotSpeed val="0"/>
+        <Billboard val="false"/>
+        <isLooping val="true"/>
+        <isBlending val="true"/>
+        <isDoubleSided val="true"/>
+        <countdown val="3.4028235e+38"/>
+        <selfDestruct val="false"/>
+        <isLocal val="true"/>
+    </PARTICLE>
+    <TRANSFORM LOCAL="true">
+        <Position x="0" y="0" z="0"/>
+        <Scale x="0.9999994" y="0.9999994" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+</GO>
+
+<PARENTING NUM="0"/>

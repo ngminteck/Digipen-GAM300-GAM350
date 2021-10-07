@@ -1,0 +1,17 @@
+<GO TYPE="go_UI">
+    <TRANSFORM>
+        <Position x="0" y="0" z="0"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <UITEXT>
+        <IsEnable val="false"/>
+        <Offset x="0.33000001" y="-2.29" z="0"/>
+        <Scale val="0.80000001"/>
+        <Color x="1" y="0" z="0" w="1"/>
+        <Highlight x="0" y="0" z="0" w="0"/>
+        <is2d val="true"/>
+        <Text name="Fuck"/>
+        <Collider x="0" y="0"/>
+    </UITEXT>
+</GO>

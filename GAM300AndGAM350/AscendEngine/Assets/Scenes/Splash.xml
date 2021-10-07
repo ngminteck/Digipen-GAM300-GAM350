@@ -1,0 +1,295 @@
+<SCENE>
+    <GO NAME="Sky Light" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-20" y="30" z="-20"/>
+            <Scale x="0.5" y="0.5" z="0.5"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Sphere"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <LIGHT>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <Type val="0"/>
+            <Intensity val="1"/>
+            <Radius val="1"/>
+        </LIGHT>
+    </GO>
+    <GO NAME="Sky Light" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="20" y="30" z="20"/>
+            <Scale x="0.5" y="0.5" z="0.5"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Sphere"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <LIGHT>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <Type val="0"/>
+            <Intensity val="0.5"/>
+            <Radius val="1"/>
+        </LIGHT>
+    </GO>
+    <GO NAME="blackscreen" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="blackscreen_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="4" y="4" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <LOGIC>
+            <Script Name="SI_SplashScreen">
+                <Duration val="3"/>
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+        <SOUND>
+            <Audio Track="BGM_Splash.ogg" Type="1" sound3d="false" Volume="0.30000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        </SOUND>
+    </GO>
+    <GO NAME="DPLOGO" TYPE="go_default" PREFAB="DPLOGO">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="0.1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="DP_Splash_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="2.5" y="2.5" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="team_Logo" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="1024_blackTeamLogo_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1.5" y="1.5" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="PressAny" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_SetupScreen_2_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1.5" y="1.5" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="PressAny_Charley" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="0.99999529" y="1" z="0.99999529"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_dialogFace_Charlie_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="-0.25999999" y="0.1" z="0"/>
+            <ScaleOffset x="1.3" y="1.3" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="14"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="PressAny_Barley" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="0.99999529" y="1" z="0.99999529"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_dialogFace_Barley_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0" y="0.41" z="0"/>
+            <ScaleOffset x="1.3" y="1.3" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="PressAny_Harley" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="0.99999529" y="1" z="0.99999529"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="UI_dialogFace_Harley_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0.26499999" y="0.1" z="0"/>
+            <ScaleOffset x="1.3" y="1.3" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="-1"/>
+            <zRotation val="-14"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="FadeScreen" TYPE="go_UI" PREFAB="FadeScreen">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1e-06" y="9.9998999e-07" z="9.9998999e-07" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0.23031232" y="0.11182351" z="0.49678499"/>
+            <ScaleOffset x="5" y="5" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+</SCENE>

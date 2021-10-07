@@ -1,0 +1,25 @@
+<GO TYPE="go_waypoint">
+    <TRANSFORM>
+        <Position x="-12.828001" y="1" z="0"/>
+        <Scale x="1" y="0.1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <WAYPOINT/>
+    <GRAPHICS>
+        <Color x="1" y="0" z="1" w="1"/>
+        <isInterface val="false"/>
+        <FromWorld val="false"/>
+        <UIautoScale val="true"/>
+        <DiffuseMap name="Blank"/>
+        <AOMap name="Blank"/>
+        <GlossMap name="Blank"/>
+        <NormalMap name="Blank"/>
+        <Roughness val="5"/>
+        <Metalic val="0"/>
+        <Model name="Sphere"/>
+        <PositionOffset x="0" y="0" z="0"/>
+        <ScaleOffset x="1" y="1" z="1"/>
+        <UVOffset x="0" y="0"/>
+        <Tiled x="1" y="1"/>
+    </GRAPHICS>
+</GO>

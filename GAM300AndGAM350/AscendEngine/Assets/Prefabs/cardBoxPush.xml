@@ -1,0 +1,107 @@
+<GO TYPE="go_default">
+    <TRANSFORM>
+        <Position x="413.29657" y="29.016781" z="-1081.1396"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+    </TRANSFORM>
+    <PARTICLE>
+        <Enabled val="true"/>
+        <OffsetLocation x="0" y="0" z="0"/>
+        <MAX_SIZE val="120"/>
+        <EMIT_TYPE val="0"/>
+        <TextureName name="Flare2_albedo"/>
+        <startMinCol x="0.75862068" y="0.71893066" z="0.65398335" w="1"/>
+        <endMinCol x="0.62068963" y="0.44538811" z="0.16052318" w="0.54022986"/>
+        <startMaxCol x="0.81034482" y="0.73952395" z="0.58214426" w="0"/>
+        <endMaxCol x="0.4770115" y="0.28729102" z="0.079501927" w="0.62643677"/>
+        <spawnTime val="0.050000001"/>
+        <spawnDelay val="0"/>
+        <startMinScale x="2" y="2" z="2"/>
+        <endMinScale x="4" y="4" z="4"/>
+        <startMaxScale x="2" y="2" z="2"/>
+        <endMaxScale x="6" y="6" z="6"/>
+        <faceDirection x="0" y="0" z="1"/>
+        <minVelocity x="140" y="1" z="140"/>
+        <maxVelocity x="-140" y="0" z="-140"/>
+        <acceleration x="0" y="-10" z="0"/>
+        <startMinSpeed val="2"/>
+        <endMinSpeed val="8"/>
+        <startMaxSpeed val="10"/>
+        <endMaxSpeed val="16"/>
+        <minLifetime val="0.5"/>
+        <maxLifetime val="3"/>
+        <minRotSpeed val="0"/>
+        <maxRotSpeed val="360"/>
+        <Billboard val="true"/>
+        <isLooping val="false"/>
+        <isBlending val="false"/>
+        <isDoubleSided val="false"/>
+        <countdown val="1.0159369"/>
+        <selfDestruct val="false"/>
+        <isLocal val="false"/>
+    </PARTICLE>
+    <GRAPHICS>
+        <IsEnable val="true"/>
+        <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+        <isInterface val="false"/>
+        <FromWorld val="false"/>
+        <UIautoScale val="true"/>
+        <MaterialSize val="1"/>
+        <DiffuseMap0 name="Cardboard_albedo"/>
+        <AOMap0 name="Blank"/>
+        <GlossMap0 name="Blank"/>
+        <NormalMap0 name="Blank"/>
+        <Roughness0 val="5"/>
+        <Metalic0 val="0"/>
+        <Model name="Cardboard_Box_Platform"/>
+        <PositionOffset x="0" y="0" z="0"/>
+        <ScaleOffset x="1" y="1" z="1"/>
+        <UVOffset x="0" y="0"/>
+        <Tiled x="1" y="1"/>
+        <zRotation val="0"/>
+    </GRAPHICS>
+    <NEWPHYSICS>
+        <IsEnable val="true"/>
+        <Geometry name="BOX"/>
+        <GeomBoxGetLengths x="72.032776" y="39.703239" z="72.032768"/>
+        <GeometryOffsetPosition x="0" y="0" z="0"/>
+        <HaveBody val="true"/>
+        <CollisionEnable val="true"/>
+        <PhysicsSurfaceEnable val="true"/>
+        <RbEnable val="false"/>
+        <Velocity val="true"/>
+        <AngularVelocity val="true"/>
+        <GravityEnable: val="true"/>
+        <prevGrav val="true"/>
+        <Mass val="1"/>
+        <CCD_Enable val="false"/>
+        <CCD_ListObjects/>
+        <IgnoreList/>
+        <HaveTriggerBox val="false"/>
+        <IgnoreListRay/>
+        <IgnoreListFloorRay/>
+    </NEWPHYSICS>
+    <LOGIC>
+        <Script Name="SI_MoveInteract">
+            <Filename name="Cardboard_Box_Interact"/>
+            <Range val="60"/>
+            <Pushable val="true"/>
+            <Pullable val="true"/>
+            <LockedPos val="false"/>
+            <Static val="false"/>
+            <Forward val="false"/>
+            <Distance val="0"/>
+            <CurrDistance val="55.162598"/>
+            <Prompt val="3"/>
+            <InteractOn name=""/>
+            <InteractOff name=""/>
+            <InteractTrigger name=""/>
+            <Sound/>
+            <Persist val="false"/>
+        </Script>
+    </LOGIC>
+    <SOUND>
+        <Audio Track="SFX_Grab.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_DragObject.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+    </SOUND>
+</GO>

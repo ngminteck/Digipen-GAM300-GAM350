@@ -1,0 +1,3276 @@
+<SCENE>
+    <GO NAME="Sky Light" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="20" y="30" z="20"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <LIGHT>
+            <Color x="1" y="1" z="1" w="1"/>
+            <Type val="0"/>
+            <Intensity val="0.5"/>
+            <Radius val="1"/>
+        </LIGHT>
+    </GO>
+    <GO NAME="Sky Light" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-25" y="20" z="-5"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <LIGHT>
+            <Color x="1" y="1" z="1" w="1"/>
+            <Type val="0"/>
+            <Intensity val="0.2"/>
+            <Radius val="1"/>
+        </LIGHT>
+    </GO>
+    <GO NAME="Sky Light" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-5" y="20" z="-25"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <LIGHT>
+            <Color x="1" y="1" z="1" w="1"/>
+            <Type val="0"/>
+            <Intensity val="0.2"/>
+            <Radius val="1"/>
+        </LIGHT>
+    </GO>
+    <GO NAME="Floor 1" TYPE="go_default" PREFAB="Floor 1">
+        <TRANSFORM>
+            <Position x="3.8146973e-06" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Wood_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Wood_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor 2" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-2.3841858e-07" y="0" z="-400"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="0.99823833" y="1" z="1" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Wood_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Wood_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 1" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="150" z="210"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor 3" TYPE="go_default" PREFAB="Floor 1">
+        <TRANSFORM>
+            <Position x="400" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Wood_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Wood_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor 4" TYPE="go_default" PREFAB="Floor 4">
+        <TRANSFORM>
+            <Position x="400" y="0" z="-400"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Wood_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Wood_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Puppy" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="5" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="puppy_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="puppy_no_anim"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 2" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="400" y="150" z="210"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 3" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="610" y="150" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 4" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="610" y="150" z="-400"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 5" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="-210" y="150" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 6" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="-210" y="150" z="-400"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Bed" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="260.96896" y="23.641823" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Bed"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Puppy Cage" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="451.26541" y="5" z="-427.95633"/>
+            <Scale x="0.99998915" y="1" z="0.99998915"/>
+            <Rotation x="4.3312576e-07" y="-1" z="-3.1391647e-07" w="1.3596531e-13"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Cage_Puppy_Open"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Rug" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="5" z="-412.29318"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Checker_Blue_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Carpet_Patterned_Checkers"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Cardboard_box_open_1" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="163.74152" y="5" z="-524.63751"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Cardboard_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Cardboard_Box_2"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 1" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="9.5367432e-07" y="-4.7683716e-07" z="-800"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 2" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="400" y="-4.7683716e-07" z="-800"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 3" TYPE="go_default" PREFAB="DefaultObject 22">
+        <TRANSFORM>
+            <Position x="-800" y="-4.7683716e-07" z="-800"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 4" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-1200" y="0" z="-800"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 5" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="800" y="0" z="-800"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor 5" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="-7.6293945e-06" z="-1200"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Wood_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Wood_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor 6" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="400" y="0" z="-1200"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Wood_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Wood_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor 7" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="0" y="0" z="-1600"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Wood_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Wood_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor 8" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="400" y="0" z="-1600"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Wood_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Wood_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 8" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="400" y="150" z="-1810"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 9" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="0" y="150" z="-1810"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 10" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="610" y="150" z="-1200"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 11" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="610" y="150" z="-1600"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 12" TYPE="go_default" PREFAB="Wall" PARENT="true">
+        <TRANSFORM>
+            <Position x="-210" y="150" z="-1200"/>
+            <Scale x="0.99999094" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <PARENTING NUM="1">
+        <CHILD_GO NAME="Wall 7" TYPE="go_default" INDEX="1" PARENT="0">
+            <TRANSFORM LOCAL="true">
+                <Position x="399.99997" y="0" z="0.13790131"/>
+                <Scale x="1.0000091" y="1" z="1"/>
+                <Rotation x="0" y="0" z="0" w="1"/>
+            </TRANSFORM>
+            <GRAPHICS>
+                <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+                <isInterface val="false"/>
+                <FromWorld val="false"/>
+                <UIautoScale val="true"/>
+                <DiffuseMap name="Blank"/>
+                <AOMap name="Blank"/>
+                <GlossMap name="Blank"/>
+                <NormalMap name="Blank"/>
+                <Roughness val="5"/>
+                <Metalic val="0"/>
+                <Model name="Wall_Segment_0.2x3x4"/>
+                <PositionOffset x="0" y="0" z="0"/>
+                <ScaleOffset x="1" y="1" z="1"/>
+                <UVOffset x="0" y="0"/>
+                <Tiled x="1" y="1"/>
+                <zRotation val="0"/>
+            </GRAPHICS>
+            <PHYSICS>
+                <Force x="0" y="0" z="0"/>
+                <Mass val="8"/>
+                <InverseMass val="0.125"/>
+                <StaticFriction val="0.40000001"/>
+                <DynamicFriction val="0.2"/>
+                <Restitution val="1"/>
+                <LinearDamping val="0.0049999999"/>
+                <Static val="false"/>
+                <Trigger val="false"/>
+                <UseGravity val="true"/>
+                <AllowRayCast val="true"/>
+                <ColliderType val="1"/>
+                <Min x="-0.5" y="-0.5" z="-0.5"/>
+                <Max x="0.5" y="0.5" z="0.5"/>
+                <ForceMultiplier val="1"/>
+                <ColliderOffset x="0" y="0" z="0"/>
+                <CollisionFilterList>
+                    <TRIGGER>IGNORE</TRIGGER>
+                    <STATIC>IGNORE</STATIC>
+                    <DYNAMIC>IGNORE</DYNAMIC>
+                    <PLAYER>IGNORE</PLAYER>
+                    <OTHER>IGNORE</OTHER>
+                </CollisionFilterList>
+            </PHYSICS>
+        </CHILD_GO>
+    </PARENTING>
+    <GO NAME="Wall 13" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="0" y="150" z="-610"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 14" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="400" y="150" z="-610"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Door_Dog"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 15" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="400" y="150" z="-1010"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Color_Palette_Set_1_albedo"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Desk_Study"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 16" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="0" y="150" z="-1010"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall Living Room 1" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="-1410" y="150" z="-1600"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall Living Room 2" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="-590" y="150" z="-1200"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall Living Room 3" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="-800" y="150" z="-1810"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall Living Room 4" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="-1200" y="150" z="-1810"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall Living Room 5" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="-590" y="150" z="-1600"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall Living Room 6" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="-1410" y="150" z="-1200"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 7" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-1200" y="2.3841858e-07" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 6" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-800" y="0" z="-400"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 8" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-800" y="1.1920929e-07" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 9" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-1200" y="0" z="-400"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 10" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-1200" y="0" z="-1200"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 12" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-800" y="0" z="-1200"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 11" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-1200" y="0" z="-1600"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 13" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-800" y="4.7683716e-07" z="-1600"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor 10" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-400" y="0" z="-400"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Wood_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Wood_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor 9" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-400" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Wood_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Wood_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 14" TYPE="go_default" PREFAB="Floor Stone">
+        <TRANSFORM>
+            <Position x="-1200" y="0" z="400"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 15" TYPE="go_default" PREFAB="Floor Stone">
+        <TRANSFORM>
+            <Position x="-800" y="0" z="400"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 16" TYPE="go_default" PREFAB="Floor Stone">
+        <TRANSFORM>
+            <Position x="-800" y="0" z="1200"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 17" TYPE="go_default" PREFAB="Floor Stone">
+        <TRANSFORM>
+            <Position x="-800" y="0" z="800"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 18" TYPE="go_default" PREFAB="Floor Stone">
+        <TRANSFORM>
+            <Position x="-1200" y="0" z="1200"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 19" TYPE="go_default" PREFAB="Floor Stone">
+        <TRANSFORM>
+            <Position x="-1200" y="0" z="800"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 20" TYPE="go_default" PREFAB="Floor Stone">
+        <TRANSFORM>
+            <Position x="-400" y="0" z="400"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Floor Stone 21" TYPE="go_default" PREFAB="Floor Stone">
+        <TRANSFORM>
+            <Position x="-400" y="0" z="800"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Floor_Stone_Tiles_albedo"/>
+            <AOMap name="Blank"/>
+            <GlossMap name="Blank"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="5"/>
+            <Metalic val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 17" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="-1410" y="150" z="-800"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 18" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="-1410" y="150" z="-400"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall 19" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="-1410" y="150" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="-1410" y="150" z="400"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Wall" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="-1410" y="150" z="800"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0.70698488" z="0" w="0.70722866"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Blank"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+    <GO NAME="Bedroom_Parent" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="192.97223" y="76.711937" z="-1398.7196"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+    </GO>
+    <GO NAME="Wall" TYPE="go_default" PREFAB="Wall">
+        <TRANSFORM>
+            <Position x="-231.91788" y="150" z="-1151.851"/>
+            <Scale x="0.99999988" y="0.99999988" z="0.99999988"/>
+            <Rotation x="0" y="-0.38274315" z="0" w="0.92385477"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <DiffuseMap name="Color_Palette_Set_1_albedo"/>
+            <AOMap name="CrateAO"/>
+            <GlossMap name="CrateSpec"/>
+            <NormalMap name="Blank"/>
+            <Roughness val="0"/>
+            <Metalic val="0"/>
+            <Model name="Wall_Segment_0.2x3x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <SOUND/>
+        <PHYSICS>
+            <Force x="0" y="0" z="0"/>
+            <Mass val="8"/>
+            <InverseMass val="0.125"/>
+            <StaticFriction val="0.40000001"/>
+            <DynamicFriction val="0.2"/>
+            <Restitution val="1"/>
+            <LinearDamping val="0.0049999999"/>
+            <Static val="false"/>
+            <Trigger val="false"/>
+            <UseGravity val="true"/>
+            <AllowRayCast val="true"/>
+            <ColliderType val="1"/>
+            <Min x="-0.5" y="-0.5" z="-0.5"/>
+            <Max x="0.5" y="0.5" z="0.5"/>
+            <ForceMultiplier val="1"/>
+            <ColliderOffset x="0" y="0" z="0"/>
+            <CollisionFilterList>
+                <TRIGGER>IGNORE</TRIGGER>
+                <STATIC>IGNORE</STATIC>
+                <DYNAMIC>IGNORE</DYNAMIC>
+                <PLAYER>IGNORE</PLAYER>
+                <OTHER>IGNORE</OTHER>
+            </CollisionFilterList>
+        </PHYSICS>
+    </GO>
+</SCENE>

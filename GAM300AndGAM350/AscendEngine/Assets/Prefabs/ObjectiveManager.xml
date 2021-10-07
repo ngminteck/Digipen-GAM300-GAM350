@@ -1,0 +1,28 @@
+<GO TYPE="go_default">
+    <TRANSFORM>
+        <Position x="-0.46000001" y="2.6400001" z="0"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <LOGIC>
+        <Script Name="SI_ObjectiveManager">
+            <ObjectiveCount val="4"/>
+            <Objective0 name="go_tower"/>
+            <Objective1 name="go_harvester"/>
+            <Objective2 name="go_powerplant"/>
+            <Objective3 name="go_powerbeacon"/>
+            <NarFile name="NarrationText"/>
+            <Persist val="false"/>
+        </Script>
+    </LOGIC>
+    <UITEXT>
+        <IsEnable val="true"/>
+        <Offset x="0" y="0" z="0"/>
+        <Scale val="1"/>
+        <Color x="0.47981542" y="0.50980389" z="0.48951763" w="1"/>
+        <Highlight x="0" y="0" z="0" w="0"/>
+        <is2d val="true"/>
+        <Text name="0 / 1"/>
+        <Collider x="0" y="0"/>
+    </UITEXT>
+</GO>

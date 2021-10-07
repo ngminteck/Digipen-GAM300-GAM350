@@ -1,0 +1,886 @@
+<SCENE>
+    <GO NAME="DogPlayer" TYPE="go_player" PREFAB="DogPlayer">
+        <TRANSFORM>
+            <Position x="-409.2594" y="125.01337" z="-54.727875"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <SOUND>
+            <Audio Track="BGM_InGame.ogg" Type="0" sound3d="false" Volume="0.1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_Bark.wav" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_DogTalk.wav" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_Grab.wav" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_DogWalk.ogg" Type="1" sound3d="false" Volume="0.40000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_Land.ogg" Type="1" sound3d="true" Volume="0.1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_Sniff.ogg" Type="1" sound3d="false" Volume="0.40000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_Jump.ogg" Type="1" sound3d="false" Volume="0.40000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_DogWalkSlow.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_DogTalk1.ogg" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_DogTalk2.ogg" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_DogTalk3.ogg" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_Pant.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+            <Audio Track="SFX_Whine.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        </SOUND>
+        <LOGIC>
+            <Script Name="SI_PlayerController">
+                <CameraFwdScale val="-0"/>
+                <CameraUpScale val="0"/>
+                <MouseSensitivity val="3.5"/>
+                <Thrust_Accl val="5"/>
+                <Thrust_Damping val="1"/>
+                <Thrust_Max val="8"/>
+                <moveSpeed val="5000"/>
+                <climbingSpeed val="0.07"/>
+                <hoverHeight val="60"/>
+                <Thrust_Height val="6250"/>
+                <rayFloorLen val="100"/>
+                <rayOffSet x="0" y="-5" z="0"/>
+                <addtionalGravForce val="-200"/>
+                <limitToStartApplying val="200"/>
+                <Persist val="false"/>
+            </Script>
+            <Script Name="SI_Hint">
+                <Persist val="false"/>
+            </Script>
+            <Script Name="SI_Scent">
+                <objective name=""/>
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="20" y="15" z="20"/>
+            <GeometryOffsetPosition x="0" y="0" z="1.224762"/>
+            <HaveBody val="true"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <RbEnable val="true"/>
+            <Velocity val="true"/>
+            <AngularVelocity val="true"/>
+            <GravityEnable: val="true"/>
+            <prevGrav val="true"/>
+            <Mass val="1"/>
+            <CCD_Enable val="true"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="true"/>
+            <TriggerGeomBoxGetLengths x="10" y="5" z="10"/>
+            <TriggerGeometryOffsetPosition x="0" y="0" z="1.224762"/>
+            <TriggerCollisionEnable val="true"/>
+            <IgnoreListTrigger/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="hintText" TYPE="go_UI" PREFAB="hintText">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <UITEXT>
+            <IsEnable val="true"/>
+            <Offset x="0" y="-2.5" z="0"/>
+            <Scale val="0.80000001"/>
+            <Color x="1" y="0" z="0" w="1"/>
+            <Highlight x="0" y="0" z="0" w="0"/>
+            <is2d val="true"/>
+            <Text name="Test"/>
+            <Collider x="0" y="0"/>
+        </UITEXT>
+    </GO>
+    <GO NAME="FadeScreen" TYPE="go_UI" PREFAB="FadeScreen">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1e-06" y="9.9998999e-07" z="9.9998999e-07" w="0"/>
+            <isInterface val="true"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="UI_Quad"/>
+            <PositionOffset x="0.23031232" y="0.11182351" z="0.49678499"/>
+            <ScaleOffset x="5" y="5" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="DefaultObject_4" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-467.45624" y="5" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Floor_Stone_Tiles_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Floor_Stone_Tiles_4x4"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="400" y="102.53334" z="400"/>
+            <GeometryOffsetPosition x="0" y="-49.593483" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="DefaultObject_5" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-352.90973" y="80.449249" z="-76.77494"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Alarm_Clock_Digital"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="14.588516" y="19.589302" z="35.95816"/>
+            <GeometryOffsetPosition x="2.2888184e-05" y="0.3718605" z="0.00010681152"/>
+            <HaveBody val="true"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <RbEnable val="true"/>
+            <Velocity val="true"/>
+            <AngularVelocity val="true"/>
+            <GravityEnable: val="false"/>
+            <prevGrav val="true"/>
+            <Mass val="5"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="DefaultObject_6" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-455.41418" y="69.039078" z="0"/>
+            <Scale x="0.5" y="0.5" z="0.5"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="false"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Alarm_Clock_Digital"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <LIGHT>
+            <IsEnable val="true"/>
+            <Color x="0.26875001" y="0.090000011" z="0.34999999" w="1"/>
+            <Type val="1"/>
+            <Intensity val="6.4499998"/>
+            <Radius val="18.299999"/>
+        </LIGHT>
+    </GO>
+    <GO NAME="Dialog" TYPE="go_default" PREFAB="Dialog">
+        <TRANSFORM>
+            <Position x="0" y="0" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <UITEXT>
+            <IsEnable val="true"/>
+            <Offset x="0" y="-2.5" z="0"/>
+            <Scale val="1"/>
+            <Color x="1" y="1" z="1" w="0"/>
+            <Highlight x="0" y="0" z="0" w="0"/>
+            <is2d val="true"/>
+            <Text name="Text"/>
+            <Collider x="0" y="0"/>
+        </UITEXT>
+    </GO>
+    <GO NAME="Waypointtt" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-352.90973" y="80.449249" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Alarm_Clock_Digital"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="1" y="1" z="1"/>
+            <GeometryOffsetPosition x="0" y="0" z="0"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <LOGIC>
+            <Script Name="SI_Waypointer">
+                <IsScent val="false"/>
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+    </GO>
+    <GO NAME="Bling_Trophy" TYPE="go_default" PREFAB="Bling_Trophy">
+        <TRANSFORM>
+            <Position x="-511.72079" y="88.276428" z="19.90646"/>
+            <Scale x="0.99991941" y="0.99997014" z="0.99993807"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <PARTICLE>
+            <OffsetLocation x="0" y="0" z="0"/>
+            <MAX_SIZE val="100"/>
+            <EMIT_TYPE val="0"/>
+            <TextureName name="longflare_albedo"/>
+            <startMinCol x="1" y="0.9692111" z="0.13793105" w="1"/>
+            <endMinCol x="1" y="0.96862745" z="0.13725489" w="1"/>
+            <startMaxCol x="1" y="0.96862745" z="0.13725489" w="1"/>
+            <endMaxCol x="1" y="0.96862745" z="0.13725489" w="1"/>
+            <spawnTime val="0.2"/>
+            <spawnDelay val="0"/>
+            <startMinScale x="1" y="1" z="1"/>
+            <endMinScale x="4" y="4" z="4"/>
+            <startMaxScale x="2" y="2" z="2"/>
+            <endMaxScale x="4" y="4" z="4"/>
+            <faceDirection x="0" y="0" z="1"/>
+            <minVelocity x="4" y="2" z="4"/>
+            <maxVelocity x="-4" y="-2" z="-4"/>
+            <acceleration x="0" y="12" z="0"/>
+            <startMinSpeed val="2"/>
+            <endMinSpeed val="2"/>
+            <startMaxSpeed val="2"/>
+            <endMaxSpeed val="2"/>
+            <minLifetime val="2"/>
+            <maxLifetime val="3"/>
+            <minRotSpeed val="0"/>
+            <maxRotSpeed val="0"/>
+            <Billboard val="true"/>
+            <isLooping val="true"/>
+            <isBlending val="false"/>
+            <isDoubleSided val="false"/>
+            <countdown val="3.4028235e+38"/>
+            <selfDestruct val="false"/>
+            <isLocal val="false"/>
+        </PARTICLE>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Trophy_Award_Gold"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="20.542583" y="34.127514" z="26.488983"/>
+            <GeometryOffsetPosition x="0" y="9.2269421" z="0"/>
+            <HaveBody val="true"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <RbEnable val="true"/>
+            <Velocity val="true"/>
+            <AngularVelocity val="true"/>
+            <GravityEnable: val="true"/>
+            <prevGrav val="true"/>
+            <Mass val="5"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="true"/>
+            <TriggerGeomBoxGetLengths x="20.542583" y="34.127514" z="26.488983"/>
+            <TriggerGeometryOffsetPosition x="0" y="9.2266665" z="0"/>
+            <TriggerCollisionEnable val="true"/>
+            <IgnoreListTrigger/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <LOGIC>
+            <Script Name="SI_PickupInteract">
+                <Filename name=""/>
+                <Range val="90"/>
+                <GrabRot x="-1.4463493e-27" y="-1.2149513e-20" z="90.009972"/>
+                <UseParticle val="false"/>
+                <Prompt val="0"/>
+                <Persist val="false"/>
+            </Script>
+            <Script Name="SI_Scent">
+                <objective name=""/>
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+    </GO>
+    <GO NAME="DefaultObject_18" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-475.19595" y="5.1377316" z="-148.54814"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <PARTICLE>
+            <OffsetLocation x="0" y="0" z="0"/>
+            <MAX_SIZE val="30"/>
+            <EMIT_TYPE val="1"/>
+            <TextureName name="longflare_albedo"/>
+            <startMinCol x="1" y="1" z="1" w="1"/>
+            <endMinCol x="1" y="1" z="1" w="1"/>
+            <startMaxCol x="1" y="1" z="1" w="1"/>
+            <endMaxCol x="1" y="1" z="1" w="1"/>
+            <spawnTime val="0.050000001"/>
+            <spawnDelay val="0"/>
+            <startMinScale x="2" y="2" z="2"/>
+            <endMinScale x="5" y="5" z="5"/>
+            <startMaxScale x="4" y="4" z="4"/>
+            <endMaxScale x="10" y="10" z="10"/>
+            <faceDirection x="0" y="0" z="1"/>
+            <minVelocity x="40" y="40" z="40"/>
+            <maxVelocity x="-40" y="-40" z="-40"/>
+            <acceleration x="0" y="20" z="0"/>
+            <startMinSpeed val="2"/>
+            <endMinSpeed val="2.5"/>
+            <startMaxSpeed val="2.5"/>
+            <endMaxSpeed val="4"/>
+            <minLifetime val="0.60000002"/>
+            <maxLifetime val="1.6"/>
+            <minRotSpeed val="0"/>
+            <maxRotSpeed val="360"/>
+            <Billboard val="true"/>
+            <isLooping val="false"/>
+            <isBlending val="false"/>
+            <isDoubleSided val="false"/>
+            <countdown val="3.4028235e+38"/>
+            <selfDestruct val="false"/>
+            <isLocal val="false"/>
+        </PARTICLE>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Barley_Sad0_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="puppy"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="ClueSmell" TYPE="go_default" PREFAB="ClueSmell">
+        <PARTICLE>
+            <OffsetLocation x="0" y="0" z="0"/>
+            <MAX_SIZE val="100"/>
+            <EMIT_TYPE val="0"/>
+            <TextureName name="UI_paw_selector_albedo"/>
+            <startMinCol x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <endMinCol x="1" y="1" z="1" w="1"/>
+            <startMaxCol x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <endMaxCol x="1" y="1" z="1" w="1"/>
+            <spawnTime val="0.15000001"/>
+            <spawnDelay val="0"/>
+            <startMinScale x="30" y="30" z="30"/>
+            <endMinScale x="50" y="50" z="50"/>
+            <startMaxScale x="35" y="35" z="35"/>
+            <endMaxScale x="65" y="65" z="65"/>
+            <faceDirection x="0" y="0" z="1"/>
+            <minVelocity x="6" y="40" z="6"/>
+            <maxVelocity x="-6" y="60" z="-6"/>
+            <acceleration x="0" y="-9.8000002" z="0"/>
+            <startMinSpeed val="2"/>
+            <endMinSpeed val="2"/>
+            <startMaxSpeed val="2"/>
+            <endMaxSpeed val="2"/>
+            <minLifetime val="0.60000002"/>
+            <maxLifetime val="0.80000001"/>
+            <minRotSpeed val="0"/>
+            <maxRotSpeed val="0"/>
+            <Billboard val="true"/>
+            <isLooping val="true"/>
+            <isBlending val="false"/>
+            <isDoubleSided val="false"/>
+            <countdown val="3.4028235e+38"/>
+            <selfDestruct val="false"/>
+            <isLocal val="false"/>
+        </PARTICLE>
+        <TRANSFORM>
+            <Position x="-381.22034" y="19.935043" z="-48.636963"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+    </GO>
+    <GO NAME="DefaultObject_11" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-589.75623" y="43.682102" z="-12.31025"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Alarm_Clock_Digital"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="14.588516" y="19.589302" z="35.95816"/>
+            <GeometryOffsetPosition x="2.2888184e-05" y="0.3718605" z="0.00010681152"/>
+            <HaveBody val="false"/>
+            <CollisionEnable val="false"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <CCD_Enable val="true"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="true"/>
+            <TriggerGeomBoxGetLengths x="100" y="100" z="100"/>
+            <TriggerGeometryOffsetPosition x="2.2888184e-05" y="0.3718605" z="0.00010681152"/>
+            <TriggerCollisionEnable val="true"/>
+            <IgnoreListTrigger/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+        <LOGIC>
+            <Script Name="SI_BaseTrigger">
+                <linkToOtherMission val="false"/>
+                <TargetObject name=""/>
+                <MissionNum val="-1"/>
+                <MissionLvl val="-1"/>
+                <amtOfTimes val="-1"/>
+                <disableAtStart val="false"/>
+                <targetToEnable val="7012459"/>
+                <MissionType val="0"/>
+                <Persist val="false"/>
+            </Script>
+        </LOGIC>
+    </GO>
+    <GO NAME="DefaultObject_13" TYPE="go_default">
+        <PARTICLE>
+            <OffsetLocation x="0" y="0" z="0"/>
+            <MAX_SIZE val="100"/>
+            <EMIT_TYPE val="1"/>
+            <TextureName name="EXPLOSION_albedo"/>
+            <startMinCol x="1" y="1" z="1" w="1"/>
+            <endMinCol x="1" y="1" z="1" w="1"/>
+            <startMaxCol x="1" y="1" z="1" w="1"/>
+            <endMaxCol x="1" y="1" z="1" w="1"/>
+            <spawnTime val="0.1"/>
+            <spawnDelay val="0"/>
+            <startMinScale x="2" y="2" z="2"/>
+            <endMinScale x="2" y="2" z="2"/>
+            <startMaxScale x="4" y="4" z="4"/>
+            <endMaxScale x="2" y="2" z="2"/>
+            <faceDirection x="0" y="0" z="1"/>
+            <minVelocity x="8" y="8" z="8"/>
+            <maxVelocity x="-8" y="-8" z="-8"/>
+            <acceleration x="0" y="20" z="0"/>
+            <startMinSpeed val="2"/>
+            <endMinSpeed val="2"/>
+            <startMaxSpeed val="2"/>
+            <endMaxSpeed val="2"/>
+            <minLifetime val="0.5"/>
+            <maxLifetime val="2.5"/>
+            <minRotSpeed val="15"/>
+            <maxRotSpeed val="225"/>
+            <Billboard val="true"/>
+            <isLooping val="true"/>
+            <isBlending val="false"/>
+            <isDoubleSided val="false"/>
+            <countdown val="3.4028235e+38"/>
+            <selfDestruct val="false"/>
+            <isLocal val="false"/>
+        </PARTICLE>
+        <TRANSFORM>
+            <Position x="-366.40454" y="27.709639" z="137.26596"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Blank"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Cardboard_Box_Platform"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+    </GO>
+    <GO NAME="Quest_Book" TYPE="go_default">
+        <TRANSFORM>
+            <Position x="-444.12137" y="30.896858" z="0"/>
+            <Scale x="0.99984539" y="0.99984539" z="0.99946111"/>
+            <Rotation x="0" y="0" z="0.70922858" w="0.70497859"/>
+        </TRANSFORM>
+        <PARTICLE>
+            <OffsetLocation x="0" y="0" z="0"/>
+            <MAX_SIZE val="100"/>
+            <EMIT_TYPE val="0"/>
+            <TextureName name="Flare_albedo"/>
+            <startMinCol x="0.39542872" y="0.45212391" z="0.94252872" w="1"/>
+            <endMinCol x="0.30076626" y="0.57049292" z="0.90229887" w="1"/>
+            <startMaxCol x="0.13725489" y="0.13774258" z="1" w="1"/>
+            <endMaxCol x="0.17717002" y="0.8094846" z="0.85632181" w="1"/>
+            <spawnTime val="0.2"/>
+            <spawnDelay val="0"/>
+            <startMinScale x="1" y="1" z="1"/>
+            <endMinScale x="4" y="4" z="4"/>
+            <startMaxScale x="2" y="2" z="2"/>
+            <endMaxScale x="4" y="4" z="4"/>
+            <faceDirection x="0" y="0" z="1"/>
+            <minVelocity x="4" y="2" z="4"/>
+            <maxVelocity x="-4" y="-2" z="-4"/>
+            <acceleration x="0" y="12" z="0"/>
+            <startMinSpeed val="2"/>
+            <endMinSpeed val="2"/>
+            <startMaxSpeed val="2"/>
+            <endMaxSpeed val="2"/>
+            <minLifetime val="1.8"/>
+            <maxLifetime val="2.5"/>
+            <minRotSpeed val="0"/>
+            <maxRotSpeed val="0"/>
+            <Billboard val="true"/>
+            <isLooping val="true"/>
+            <isBlending val="true"/>
+            <isDoubleSided val="false"/>
+            <countdown val="3.4028235e+38"/>
+            <selfDestruct val="false"/>
+            <isLocal val="false"/>
+        </PARTICLE>
+        <GRAPHICS>
+            <IsEnable val="true"/>
+            <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <isInterface val="false"/>
+            <FromWorld val="false"/>
+            <UIautoScale val="true"/>
+            <MaterialSize val="1"/>
+            <DiffuseMap0 name="Book_Files_Colors_albedo"/>
+            <AOMap0 name="Blank"/>
+            <GlossMap0 name="Blank"/>
+            <NormalMap0 name="Blank"/>
+            <Roughness0 val="5"/>
+            <Metalic0 val="0"/>
+            <Model name="Book_Blue_Individual"/>
+            <PositionOffset x="0" y="0" z="0"/>
+            <ScaleOffset x="1" y="1" z="1"/>
+            <UVOffset x="0" y="0"/>
+            <Tiled x="1" y="1"/>
+            <zRotation val="0"/>
+        </GRAPHICS>
+        <NEWPHYSICS>
+            <IsEnable val="true"/>
+            <Geometry name="BOX"/>
+            <GeomBoxGetLengths x="12.938278" y="31.136795" z="30.818382"/>
+            <GeometryOffsetPosition x="0" y="-9.5366738e-07" z="0.79021168"/>
+            <HaveBody val="true"/>
+            <CollisionEnable val="true"/>
+            <PhysicsSurfaceEnable val="true"/>
+            <RbEnable val="true"/>
+            <Velocity val="true"/>
+            <AngularVelocity val="true"/>
+            <GravityEnable: val="true"/>
+            <prevGrav val="true"/>
+            <Mass val="1"/>
+            <CCD_Enable val="false"/>
+            <CCD_ListObjects/>
+            <IgnoreList/>
+            <HaveTriggerBox val="false"/>
+            <IgnoreListRay/>
+            <IgnoreListFloorRay/>
+        </NEWPHYSICS>
+    </GO>
+    <GO NAME="DestinationSmell" TYPE="go_default" PREFAB="DestinationSmell">
+        <TRANSFORM>
+            <Position x="-411.07248" y="19.935043" z="-48.636963"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <PARTICLE>
+            <OffsetLocation x="0" y="0" z="0"/>
+            <MAX_SIZE val="100"/>
+            <EMIT_TYPE val="0"/>
+            <TextureName name="UI_paw_selector_albedo"/>
+            <startMinCol x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <endMinCol x="1" y="1" z="1" w="1"/>
+            <startMaxCol x="1" y="0.99998999" z="0.99998999" w="1"/>
+            <endMaxCol x="1" y="1" z="1" w="1"/>
+            <spawnTime val="0.15000001"/>
+            <spawnDelay val="0"/>
+            <startMinScale x="30" y="30" z="30"/>
+            <endMinScale x="50" y="50" z="50"/>
+            <startMaxScale x="35" y="35" z="35"/>
+            <endMaxScale x="65" y="65" z="65"/>
+            <faceDirection x="0" y="0" z="1"/>
+            <minVelocity x="6" y="40" z="6"/>
+            <maxVelocity x="-6" y="60" z="-6"/>
+            <acceleration x="0" y="-9.8000002" z="0"/>
+            <startMinSpeed val="2"/>
+            <endMinSpeed val="2"/>
+            <startMaxSpeed val="2"/>
+            <endMaxSpeed val="2"/>
+            <minLifetime val="0.60000002"/>
+            <maxLifetime val="0.80000001"/>
+            <minRotSpeed val="0"/>
+            <maxRotSpeed val="0"/>
+            <Billboard val="true"/>
+            <isLooping val="true"/>
+            <isBlending val="false"/>
+            <isDoubleSided val="false"/>
+            <countdown val="3.4028235e+38"/>
+            <selfDestruct val="false"/>
+            <isLocal val="false"/>
+        </PARTICLE>
+    </GO>
+    <GO NAME="suffering" TYPE="go_default" PREFAB="suffering">
+        <TRANSFORM>
+            <Position x="-590.35052" y="35.795773" z="-11.382599"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <PARTICLE>
+            <OffsetLocation x="0" y="0" z="0"/>
+            <MAX_SIZE val="60"/>
+            <EMIT_TYPE val="1"/>
+            <TextureName name="Flare_albedo"/>
+            <startMinCol x="0.42240357" y="0.87931037" z="0.18192628" w="1"/>
+            <endMinCol x="0.29250896" y="1" z="0.022988498" w="0"/>
+            <startMaxCol x="0.63714504" y="0.89655173" z="0.1442727" w="1"/>
+            <endMaxCol x="0.16495147" y="0.93103451" z="0.0053507853" w="0"/>
+            <spawnTime val="1"/>
+            <spawnDelay val="0"/>
+            <startMinScale x="2" y="2" z="2"/>
+            <endMinScale x="4" y="4" z="4"/>
+            <startMaxScale x="2" y="2" z="2"/>
+            <endMaxScale x="6" y="6" z="6"/>
+            <faceDirection x="0" y="0" z="1"/>
+            <minVelocity x="30" y="0" z="30"/>
+            <maxVelocity x="-30" y="0" z="-30"/>
+            <acceleration x="6" y="50" z="0"/>
+            <startMinSpeed val="0.25"/>
+            <endMinSpeed val="0.5"/>
+            <startMaxSpeed val="0.5"/>
+            <endMaxSpeed val="1.2"/>
+            <minLifetime val="0.80000001"/>
+            <maxLifetime val="2"/>
+            <minRotSpeed val="0"/>
+            <maxRotSpeed val="360"/>
+            <Billboard val="true"/>
+            <isLooping val="false"/>
+            <isBlending val="false"/>
+            <isDoubleSided val="false"/>
+            <countdown val="3.4028235e+38"/>
+            <selfDestruct val="false"/>
+            <isLocal val="false"/>
+        </PARTICLE>
+    </GO>
+    <GO NAME="Dragging" TYPE="go_default" PREFAB="Dragging">
+        <TRANSFORM>
+            <Position x="-367.29218" y="27" z="137"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+        <PARTICLE>
+            <OffsetLocation x="0" y="0" z="0"/>
+            <MAX_SIZE val="120"/>
+            <EMIT_TYPE val="1"/>
+            <TextureName name="Flare2_albedo"/>
+            <startMinCol x="0.75862068" y="0.71893066" z="0.65398335" w="1"/>
+            <endMinCol x="0.62068963" y="0.44538811" z="0.16052318" w="0.54022986"/>
+            <startMaxCol x="0.81034482" y="0.73952395" z="0.58214426" w="0"/>
+            <endMaxCol x="0.4770115" y="0.28729102" z="0.079501927" w="0.62643677"/>
+            <spawnTime val="2"/>
+            <spawnDelay val="0"/>
+            <startMinScale x="2" y="2" z="2"/>
+            <endMinScale x="4" y="4" z="4"/>
+            <startMaxScale x="2" y="2" z="2"/>
+            <endMaxScale x="6" y="6" z="6"/>
+            <faceDirection x="0" y="0" z="1"/>
+            <minVelocity x="70" y="1" z="70"/>
+            <maxVelocity x="-70" y="0" z="-70"/>
+            <acceleration x="0" y="15" z="0"/>
+            <startMinSpeed val="2"/>
+            <endMinSpeed val="8"/>
+            <startMaxSpeed val="10"/>
+            <endMaxSpeed val="16"/>
+            <minLifetime val="0.5"/>
+            <maxLifetime val="1.8"/>
+            <minRotSpeed val="0"/>
+            <maxRotSpeed val="360"/>
+            <Billboard val="true"/>
+            <isLooping val="true"/>
+            <isBlending val="false"/>
+            <isDoubleSided val="false"/>
+            <countdown val="1.0159369"/>
+            <selfDestruct val="true"/>
+            <isLocal val="false"/>
+        </PARTICLE>
+    </GO>
+    <GO NAME="Particle_Building_Smoke" TYPE="go_default" PREFAB="Particle_Building_Smoke">
+        <PARTICLE>
+            <OffsetLocation x="0" y="0" z="0"/>
+            <MAX_SIZE val="50"/>
+            <EMIT_TYPE val="0"/>
+            <TextureName name="Flare2_albedo"/>
+            <startMinCol x="0.7298851" y="0.71200979" z="0.20554234" w="0.58823532"/>
+            <endMinCol x="0.95977008" y="0.95977002" z="0.16547757" w="0.19607843"/>
+            <startMaxCol x="0.69540226" y="0.67451113" z="0.14387633" w="0.58823532"/>
+            <endMaxCol x="0.91379309" y="0.91379303" z="0.12078875" w="0.19607843"/>
+            <spawnTime val="0.30000001"/>
+            <spawnDelay val="0"/>
+            <startMinScale x="3" y="3" z="3"/>
+            <endMinScale x="1" y="1" z="1"/>
+            <startMaxScale x="3.5" y="3.5" z="3.5"/>
+            <endMaxScale x="1" y="1" z="1"/>
+            <faceDirection x="0" y="0" z="1"/>
+            <minVelocity x="4" y="20" z="4"/>
+            <maxVelocity x="-4" y="25" z="-4"/>
+            <acceleration x="0" y="1" z="0"/>
+            <startMinSpeed val="1"/>
+            <endMinSpeed val="1.5"/>
+            <startMaxSpeed val="1"/>
+            <endMaxSpeed val="2.5"/>
+            <minLifetime val="5"/>
+            <maxLifetime val="6"/>
+            <minRotSpeed val="-12.5"/>
+            <maxRotSpeed val="12.5"/>
+            <Billboard val="true"/>
+            <isLooping val="true"/>
+            <isBlending val="false"/>
+            <isDoubleSided val="false"/>
+            <countdown val="3.4028235e+38"/>
+            <selfDestruct val="false"/>
+            <isLocal val="false"/>
+        </PARTICLE>
+        <TRANSFORM>
+            <Position x="-556.36676" y="46.220169" z="0"/>
+            <Scale x="1" y="1" z="1"/>
+            <Rotation x="0" y="0" z="0" w="1"/>
+        </TRANSFORM>
+    </GO>
+</SCENE>

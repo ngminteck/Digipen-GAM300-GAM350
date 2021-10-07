@@ -1,0 +1,56 @@
+<GO TYPE="go_default">
+    <TRANSFORM>
+        <Position x="328.32471" y="113.45181" z="-45.907478"/>
+        <Scale x="0.99999779" y="1" z="0.99999779"/>
+        <Rotation x="-2.2891909e-07" y="-0.94513184" z="3.8053196e-07" w="0.32668912"/>
+    </TRANSFORM>
+    <NEWPHYSICS>
+        <IsEnable val="true"/>
+        <Geometry name="BOX"/>
+        <GeomBoxGetLengths x="26.788473" y="1" z="20.585117"/>
+        <GeometryOffsetPosition x="0" y="0" z="0"/>
+        <HaveBody val="true"/>
+        <CollisionEnable val="true"/>
+        <PhysicsSurfaceEnable val="true"/>
+        <RbEnable val="true"/>
+        <Velocity val="true"/>
+        <AngularVelocity val="true"/>
+        <GravityEnable: val="true"/>
+        <prevGrav val="true"/>
+        <Mass val="1"/>
+        <CCD_Enable val="false"/>
+        <CCD_ListObjects/>
+        <IgnoreList/>
+        <HaveTriggerBox val="false"/>
+        <IgnoreListRay/>
+        <IgnoreListFloorRay/>
+    </NEWPHYSICS>
+    <GRAPHICS>
+        <IsEnable val="true"/>
+        <Color x="1" y="0.99998999" z="0.99998999" w="1"/>
+        <isInterface val="false"/>
+        <FromWorld val="false"/>
+        <UIautoScale val="true"/>
+        <MaterialSize val="1"/>
+        <DiffuseMap0 name="Paper_Documents_albedo"/>
+        <AOMap0 name="Blank"/>
+        <GlossMap0 name="Blank"/>
+        <NormalMap0 name="Blank"/>
+        <Roughness0 val="5"/>
+        <Metalic0 val="0"/>
+        <Model name="Document_Page_1"/>
+        <PositionOffset x="0" y="0" z="0"/>
+        <ScaleOffset x="1" y="1" z="1"/>
+        <UVOffset x="0" y="0"/>
+        <Tiled x="1" y="1"/>
+        <zRotation val="0"/>
+    </GRAPHICS>
+    <LOGIC>
+        <Script Name="SI_PickupInteract">
+            <Filename name="PaperDocuments_Interact"/>
+            <Range val="120"/>
+            <GrabRot x="0" y="0" z="0"/>
+            <Persist val="false"/>
+        </Script>
+    </LOGIC>
+</GO>

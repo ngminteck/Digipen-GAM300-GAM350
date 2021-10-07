@@ -1,0 +1,15 @@
+<GO TYPE="go_default">
+    <TRANSFORM>
+        <Position x="0" y="0" z="0"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <LOGIC>
+        <Script Name="SI_EndGameScript">
+            <Persist val="false"/>
+        </Script>
+    </LOGIC>
+    <SOUND>
+        <Audio Track="BGM_ambience_01.ogg" Type="0" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+    </SOUND>
+</GO>

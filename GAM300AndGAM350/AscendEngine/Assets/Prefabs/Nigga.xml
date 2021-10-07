@@ -1,0 +1,105 @@
+<GO TYPE="go_player">
+    <TRANSFORM>
+        <Position x="0" y="29.400177" z="0"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+    <GRAPHICS>
+        <Color x="0" y="1" z="0" w="1"/>
+        <isInterface val="false"/>
+        <FromWorld val="false"/>
+        <UIautoScale val="true"/>
+        <DiffuseMap name="Blank"/>
+        <AOMap name="Blank"/>
+        <GlossMap name="Blank"/>
+        <NormalMap name="Blank"/>
+        <Roughness val="5"/>
+        <Metalic val="0"/>
+        <Model name="Fedora_Noir"/>
+        <PositionOffset x="0" y="10" z="0"/>
+        <ScaleOffset x="1" y="1" z="1"/>
+        <UVOffset x="0" y="0"/>
+        <Tiled x="1" y="1"/>
+        <zRotation val="0"/>
+    </GRAPHICS>
+    <SOUND>
+        <Audio Track="SFX_Player_backward_01.ogg" Type="1" sound3d="true" Volume="0.0099999998" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Tower_standard2_fire_loop_01.ogg" Type="1" sound3d="true" Volume="0.80000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Player_collide_portal_01.ogg" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Tower_build_finish_01.ogg" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Crystal_obtained_01.ogg" Type="1" sound3d="false" Volume="0.80000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Tower_build_fail_01.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Player_crosshair_lockon_01.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Player_collide_wall_01.ogg" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Player_gun_pickup_01.ogg" Type="1" sound3d="false" Volume="0.30000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Player_crosshair_lockoff_01.ogg" Type="1" sound3d="true" Volume="1" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Button_UI_scroll_01.ogg" Type="1" sound3d="false" Volume="1" Pitch="1" minDist="5" maxDist="10" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Player_forward_01.ogg" Type="1" sound3d="true" Volume="0.0099999998" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Player_gun_finish_01.ogg" Type="1" sound3d="false" Volume="0.40000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Player_left_01.ogg" Type="1" sound3d="true" Volume="0.0099999998" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Player_right_01.ogg" Type="1" sound3d="true" Volume="0.0099999998" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Tower_standard1_fire_01.ogg" Type="1" sound3d="true" Volume="0.80000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Tower_frost1_fire_01.ogg" Type="1" sound3d="true" Volume="0.80000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Tower_frost2_fire_01.ogg" Type="1" sound3d="true" Volume="0.80000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Tower_debuff1_fire_01.ogg" Type="1" sound3d="true" Volume="0.80000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+        <Audio Track="SFX_Tower_debuff2_fire_01.ogg" Type="1" sound3d="true" Volume="0.80000001" Pitch="1" minDist="5" maxDist="20" noDie="false" loopCount="1"/>
+    </SOUND>
+    <LOGIC>
+        <Script Name="SI_PlayerController">
+            <CameraFwdScale val="-0"/>
+            <CameraUpScale val="0"/>
+            <MouseSensitivity val="3.5"/>
+            <Thrust_Accl val="5"/>
+            <Thrust_Damping val="1"/>
+            <Thrust_Max val="8"/>
+            <moveSpeed val="30"/>
+            <Thrust_Height val="65"/>
+            <Persist val="false"/>
+        </Script>
+    </LOGIC>
+    <NEWPHYSICS>
+        <Geometry name="BOX"/>
+        <GeomBoxGetLengths x="38.383392" y="18.792946" z="45.84491"/>
+        <GeometryOffsetPosition x="0" y="7.7932243" z="1.224762"/>
+        <HaveBody val="true"/>
+        <CollisionEnable val="true"/>
+        <PhysicsSurfaceEnable val="true"/>
+        <ContactMode>
+            <dContactApprox0 val="false"/>
+            <dContactApprox1 val="false"/>
+            <dContactApprox1_1 val="false"/>
+            <dContactApprox1_2 val="false"/>
+            <dContactApprox1_N val="false"/>
+            <dContactAxisDep val="false"/>
+            <dContactBounce val="false"/>
+            <dContactFDir1 val="false"/>
+            <dContactMotion1 val="false"/>
+            <dContactMotion2 val="false"/>
+            <dContactMotionN val="false"/>
+            <dContactMu2 val="false"/>
+            <dContactRolling val="false"/>
+            <dContactSlip1 val="false"/>
+            <dContactSlip2 val="false"/>
+            <dContactSoftCFM val="false"/>
+            <dContactSoftERP val="false"/>
+        </ContactMode>
+        <Friction1 val="0"/>
+        <Friction2 val="0"/>
+        <Densities1 val="0"/>
+        <Densities2 val="0"/>
+        <DensitiesN val="0"/>
+        <Bounce val="0"/>
+        <BounceVel val="0"/>
+        <ErrorReductionParameter val="0"/>
+        <ConstraintForce val="0"/>
+        <Motion1 val="0"/>
+        <Motion2 val="0"/>
+        <ForceDependentSlip1 val="0"/>
+        <ForceDependentSlip2 val="0"/>
+        <RbEnable val="true"/>
+        <Velocity val="true"/>
+        <AngularVelocity val="true"/>
+        <GravityEnable: val="false"/>
+        <Mass val="1"/>
+    </NEWPHYSICS>
+</GO>

@@ -1,0 +1,39 @@
+<GO TYPE="go_default">
+    <PARTICLE>
+        <MAX_SIZE val="120"/>
+        <EMIT_TYPE val="1"/>
+        <TextureName name="Flare2_albedo"/>
+        <startMinCol x="0" y="0.87783289" z="1" w="1"/>
+        <endMinCol x="1" y="0.99998999" z="0.99998999" w="0.54022986"/>
+        <startMaxCol x="0.013669014" y="0" z="1" w="0"/>
+        <endMaxCol x="1e-06" y="9.9998999e-07" z="9.9998999e-07" w="0.62643677"/>
+        <spawnTime val="10"/>
+        <startMinScale x="2" y="2" z="2"/>
+        <endMinScale x="0" y="0" z="0"/>
+        <startMaxScale x="2" y="2" z="2"/>
+        <endMaxScale x="0" y="0" z="0"/>
+        <faceDirection x="0" y="0" z="1"/>
+        <minVelocity x="5" y="5" z="5"/>
+        <maxVelocity x="-5" y="-5" z="-5"/>
+        <acceleration x="0" y="0" z="0"/>
+        <startMinSpeed val="2"/>
+        <endMinSpeed val="2"/>
+        <startMaxSpeed val="10"/>
+        <endMaxSpeed val="10"/>
+        <minLifetime val="0.5"/>
+        <maxLifetime val="1"/>
+        <minRotSpeed val="0"/>
+        <maxRotSpeed val="360"/>
+        <Billboard val="true"/>
+        <isLooping val="false"/>
+        <isBlending val="true"/>
+        <isDoubleSided val="false"/>
+        <countdown val="1.0159369"/>
+        <selfDestruct val="true"/>
+    </PARTICLE>
+    <TRANSFORM>
+        <Position x="0.30799699" y="1.7682042" z="7.089561"/>
+        <Scale x="1" y="1" z="1"/>
+        <Rotation x="0" y="0" z="0" w="1"/>
+    </TRANSFORM>
+</GO>
